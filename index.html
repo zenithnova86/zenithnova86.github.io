@@ -1,0 +1,1083 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>天天夜夜狠狠的爱-都市长篇连载与读者共读</title>
+<meta name="description" content="天天夜夜狠狠的爱是一部都市长篇连载作品，记录人物在承诺、距离与日常琐碎里的选择。这里提供分章阅读指引、人物关系梳理、读者评论与更新日历，帮助新读者快速进入故事。">
+<meta name="keywords" content="天天夜夜狠狠的爱">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236d2a3a'/%3E%3Cpath d='M32 50c-12-8-20-15-20-24a10 10 0 0 1 20-4 10 10 0 0 1 20 4c0 9-8 16-20 24z' fill='%23f5d3b3'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#241a1d;
+  --ink-soft:#4d3b40;
+  --muted:#7a6469;
+  --rose:#8c2f45;
+  --rose-deep:#6d2a3a;
+  --rose-soft:#f3dde0;
+  --sand:#f7f0e8;
+  --paper:#fffaf5;
+  --line:#e3d5cd;
+  --line-strong:#d2bdb2;
+  --gold:#b98a3d;
+  --shadow:0 2px 6px rgba(60,30,35,.06),0 12px 28px rgba(60,30,35,.08);
+  --radius:14px;
+  --radius-sm:8px;
+  --gap:clamp(16px,2.4vw,28px);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --serif:"Songti SC","Noto Serif SC",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--sand);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-text-size-adjust:100%;
+}
+a{color:var(--rose-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{line-height:1.35;margin:0}
+p{margin:0 0 .9em}
+[id]{scroll-margin-top:118px}
+
+/* 吸顶 */
+.sticky-wrap{position:sticky;top:0;z-index:50}
+.announce{
+  background:var(--rose-deep);
+  color:#f8e9ea;
+  font-size:13px;
+  letter-spacing:.01em;
+}
+.announce-inner{
+  max-width:1180px;margin:0 auto;padding:7px 18px;
+  display:flex;gap:12px;align-items:center;justify-content:center;
+  text-align:center;flex-wrap:wrap;
+}
+.announce b{color:#fff;font-weight:600}
+.announce .dot{opacity:.5}
+header.site-head{
+  background:rgba(255,250,245,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(8px);
+}
+.head-inner{
+  max-width:1180px;margin:0 auto;padding:10px 18px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:38px;height:38px;flex-shrink:0}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text .name{font-family:var(--serif);font-size:18px;font-weight:700;color:var(--rose-deep);letter-spacing:.03em}
+.brand-text .sub{font-size:11px;color:var(--muted);letter-spacing:.22em}
+.main-nav{margin-left:auto}
+.nav-toggle{
+  display:none;background:none;border:1px solid var(--line-strong);
+  border-radius:var(--radius-sm);padding:8px 12px;font-size:14px;color:var(--ink-soft);
+  cursor:pointer;font-family:inherit;
+}
+.nav-toggle:focus-visible,.main-nav a:focus-visible,.search-box input:focus-visible,.search-box button:focus-visible,.top-btn:focus-visible,summary:focus-visible{
+  outline:2px solid var(--rose);outline-offset:2px;
+}
+.nav-list{
+  list-style:none;margin:0;padding:0;display:flex;gap:4px;flex-wrap:wrap;
+}
+.nav-list a{
+  display:block;padding:6px 10px;border-radius:var(--radius-sm);
+  font-size:14px;color:var(--ink-soft);
+}
+.nav-list a:hover{background:var(--rose-soft);text-decoration:none;color:var(--rose-deep)}
+.nav-list a.is-active{background:var(--rose-deep);color:#fff}
+.head-tools{display:flex;align-items:center;gap:10px}
+.search-box{display:flex;align-items:center;gap:0}
+.search-box input{
+  width:150px;padding:7px 10px;font-size:13px;font-family:inherit;
+  border:1px solid var(--line-strong);border-radius:var(--radius-sm) 0 0 var(--radius-sm);
+  background:#fff;color:var(--ink);
+}
+.search-box button{
+  padding:7px 12px;font-size:13px;font-family:inherit;cursor:pointer;
+  border:1px solid var(--line-strong);border-left:none;
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  background:var(--rose);color:#fff;
+}
+.search-feedback{
+  display:none;font-size:12px;color:var(--rose-deep);background:var(--rose-soft);
+  padding:6px 12px;border-radius:var(--radius-sm);margin-top:4px;
+}
+.search-feedback.show{display:block}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 88% 10%,rgba(140,47,69,.14),transparent 46%),
+    radial-gradient(circle at 6% 92%,rgba(185,138,61,.14),transparent 44%),
+    linear-gradient(160deg,#fdf7f0,#f6e6e2 60%,#f2ddd8);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{
+  max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,64px) 18px;
+  display:grid;grid-template-columns:1.25fr .85fr;gap:var(--gap);align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;
+  color:var(--rose-deep);background:rgba(255,255,255,.7);border:1px solid var(--line-strong);
+  padding:4px 12px;border-radius:999px;margin-bottom:16px;
+}
+.hero h1{
+  font-family:var(--serif);font-size:clamp(28px,4.4vw,44px);letter-spacing:.02em;
+  color:var(--ink);margin-bottom:14px;
+}
+.hero-lead{max-width:34em;color:var(--ink-soft);font-size:15.5px}
+.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin:18px 0 22px;font-size:13px;color:var(--muted)}
+.hero-meta b{display:block;font-size:20px;color:var(--rose-deep);font-family:var(--serif)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:999px;font-size:14.5px;
+  border:1px solid var(--rose-deep);transition:transform .18s ease,background .18s ease;
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn-primary{background:var(--rose-deep);color:#fff}
+.btn-primary:hover{background:#5a2230}
+.btn-ghost{background:transparent;color:var(--rose-deep)}
+.btn-ghost:hover{background:rgba(255,255,255,.6)}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 18px 26px rgba(109,42,58,.16))}
+.hero-quote{
+  position:absolute;left:6%;bottom:4%;background:rgba(255,250,245,.94);
+  border:1px solid var(--line-strong);border-radius:var(--radius);
+  padding:10px 14px;font-size:12.5px;color:var(--ink-soft);max-width:74%;
+  box-shadow:var(--shadow);font-family:var(--serif);line-height:1.6;
+}
+
+/* 通用板块 */
+.section{max-width:1180px;margin:0 auto;padding:clamp(30px,4.4vw,54px) 18px}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px}
+.sec-head h2{
+  font-family:var(--serif);font-size:clamp(20px,2.5vw,26px);color:var(--ink);letter-spacing:.01em;
+}
+.sec-head .kicker{font-size:12px;color:var(--gold);letter-spacing:.18em}
+.sec-desc{color:var(--muted);font-size:14px;max-width:62em;margin-bottom:22px}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;box-shadow:var(--shadow);
+}
+.grid{display:grid;gap:var(--gap)}
+
+/* 领域概览 */
+.overview-grid{grid-template-columns:repeat(4,1fr)}
+.ov-item{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.ov-item .num{font-family:var(--serif);font-size:26px;color:var(--rose-deep);display:block;line-height:1.2}
+.ov-item .lab{font-size:13px;color:var(--muted)}
+.ov-item p{font-size:13.5px;color:var(--ink-soft);margin:8px 0 0}
+
+/* 精选推荐 */
+.featured-grid{grid-template-columns:repeat(3,1fr)}
+.feat-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);
+}
+.feat-card img{width:100%;height:150px;object-fit:cover}
+.feat-body{padding:16px 18px;flex:1;display:flex;flex-direction:column}
+.feat-body h3{font-size:16.5px;margin-bottom:6px}
+.feat-body p{font-size:13.5px;color:var(--ink-soft);flex:1}
+.meta-row{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:10px}
+.pill{background:var(--rose-soft);color:var(--rose-deep);border-radius:999px;padding:2px 10px;font-size:11.5px}
+
+/* 最新更新列表 */
+.upd-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper)}
+.upd-list li{display:flex;gap:14px;align-items:baseline;padding:13px 18px;border-bottom:1px solid var(--line);font-size:14px}
+.upd-list li:last-child{border-bottom:none}
+.upd-list time{flex-shrink:0;color:var(--muted);font-size:12.5px;width:78px}
+.upd-list .tag{flex-shrink:0;font-size:11.5px;color:var(--gold);border:1px solid #e8d7b8;border-radius:4px;padding:1px 7px}
+.upd-list a{font-weight:500}
+
+/* 分类入口 */
+.cat-grid{grid-template-columns:repeat(4,1fr)}
+.cat-item{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:15px 16px;transition:transform .18s ease,border-color .18s ease;
+}
+.cat-item:hover{transform:translateY(-3px);border-color:var(--rose)}
+.cat-item h3{font-size:15px;margin-bottom:4px}
+.cat-item p{font-size:12.5px;color:var(--muted);margin:0}
+
+/* 深度解析 */
+.deep{background:linear-gradient(180deg,#fdf8f3,#fffaf5);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.deep-grid{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:calc(var(--gap) * 1.4);align-items:start}
+.deep-main h3{font-size:18px;color:var(--rose-deep);margin:26px 0 8px;font-family:var(--serif)}
+.deep-main h3:first-child{margin-top:0}
+.deep-main p{font-size:15px;color:var(--ink-soft)}
+.deep-main blockquote{
+  margin:18px 0;padding:14px 20px;border-left:3px solid var(--rose);
+  background:rgba(255,255,255,.72);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-family:var(--serif);color:var(--ink-soft);
+}
+.fact-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0 4px;background:var(--paper)}
+.fact-table th,.fact-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.fact-table th{background:var(--rose-soft);color:var(--rose-deep);font-weight:600}
+.side-note{font-size:13px;color:var(--muted)}
+.side-note .card{margin-bottom:var(--gap)}
+.claim-list{list-style:none;padding:0;margin:10px 0 0}
+.claim-list li{font-size:13.5px;padding:8px 0 8px 18px;border-bottom:1px dashed var(--line);position:relative;color:var(--ink-soft)}
+.claim-list li::before{content:"";position:absolute;left:0;top:16px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.claim-list li:last-child{border-bottom:none}
+
+/* 体验指南 */
+.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.steps li{counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;position:relative;padding-top:48px}
+.steps li::before{
+  content:counter(s,decimal-leading-zero);position:absolute;top:12px;left:18px;
+  font-family:var(--serif);font-size:22px;color:var(--rose);opacity:.7;
+}
+.steps h3{font-size:15px;margin-bottom:6px}
+.steps p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* FAQ */
+.faq-wrap{max-width:860px}
+details{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  margin-bottom:10px;overflow:hidden;
+}
+details[open]{border-color:var(--line-strong);box-shadow:var(--shadow)}
+summary{
+  cursor:pointer;padding:14px 18px;font-size:15px;font-weight:500;color:var(--ink);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--serif);color:var(--rose);font-size:19px;flex-shrink:0}
+details[open] summary::after{content:"−"}
+details .a{padding:0 18px 16px;font-size:14px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:12px}
+
+/* 评论 */
+.cmt-grid{grid-template-columns:repeat(2,1fr)}
+.cmt{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.cmt-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.avatar{
+  width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  font-size:13px;color:#fff;background:var(--rose);
+}
+.avatar.b{background:var(--gold)}
+.avatar.c{background:#5c6b73}
+.avatar.d{background:#7d5b8c}
+.cmt-top .who{font-size:13.5px;font-weight:600}
+.cmt-top .when{font-size:12px;color:var(--muted);margin-left:auto}
+.cmt p{font-size:13.8px;color:var(--ink-soft);margin:0}
+.cmt .ref{font-size:12px;color:var(--gold);margin-top:8px;display:block}
+
+/* 资讯 */
+.news-grid{grid-template-columns:repeat(3,1fr)}
+.news-item{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.news-item time{font-size:12px;color:var(--muted)}
+.news-item h3{font-size:15px;margin:4px 0 6px}
+.news-item p{font-size:13.3px;color:var(--ink-soft);margin:0}
+
+/* 相关推荐标签 */
+.tagcloud{display:flex;flex-wrap:wrap;gap:10px}
+.tagcloud a{
+  display:inline-block;padding:7px 15px;border-radius:999px;font-size:13.5px;
+  background:var(--paper);border:1px solid var(--line-strong);color:var(--ink-soft);
+  transition:background .18s ease,color .18s ease;
+}
+.tagcloud a:hover{background:var(--rose-deep);color:#fff;border-color:var(--rose-deep);text-decoration:none}
+
+/* 榜单 */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:r}
+.rank-list li{
+  counter-increment:r;display:flex;gap:14px;align-items:flex-start;
+  padding:13px 16px;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius-sm);margin-bottom:10px;
+}
+.rank-list li::before{
+  content:counter(r);font-family:var(--serif);font-size:18px;color:var(--rose);
+  min-width:26px;text-align:center;line-height:1.4;
+}
+.rank-list h3{font-size:15px;margin-bottom:2px}
+.rank-list p{font-size:13px;color:var(--muted);margin:0}
+.rank-list .sc{margin-left:auto;font-size:12px;color:var(--gold);flex-shrink:0;padding-left:8px}
+
+/* 双栏标准 */
+.two-col{display:grid;grid-template-columns:minmax(0,2.5fr) minmax(0,1fr);gap:calc(var(--gap) * 1.2);align-items:start}
+.side-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-bottom:var(--gap)}
+.side-card h3{font-size:15px;margin-bottom:8px;color:var(--rose-deep)}
+.side-card ul{list-style:none;padding:0;margin:0}
+.side-card li{font-size:13.3px;padding:6px 0;border-bottom:1px dashed var(--line)}
+.side-card li:last-child{border-bottom:none}
+.mini-note{font-size:12.5px;color:var(--muted);margin-top:10px}
+
+/* 页脚 */
+footer.site-foot{background:#2c1f23;color:#d9c9c6;margin-top:20px}
+.foot-inner{max-width:1180px;margin:0 auto;padding:clamp(30px,4vw,50px) 18px 24px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:calc(var(--gap) * 1.2);margin-bottom:26px}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand svg{width:34px;height:34px}
+.foot-brand .name{font-family:var(--serif);font-size:17px;color:#fff;letter-spacing:.03em}
+.foot-desc{font-size:13px;line-height:1.8;color:#b7a5a2;max-width:30em}
+.foot-inner h3{font-size:13.5px;color:#f0e2df;margin-bottom:10px;letter-spacing:.08em}
+.foot-links{list-style:none;padding:0;margin:0;columns:2;column-gap:18px}
+.foot-links li{font-size:13px;padding:3px 0}
+.foot-links a{color:#c9b6b2}
+.foot-links a:hover{color:#fff}
+.foot-note{border-top:1px solid #413034;padding-top:16px;font-size:12.5px;color:#998784;line-height:1.8}
+.foot-note p{margin:0 0 6px}
+.foot-bottom{margin-top:14px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:#8b7976}
+
+/* 回到顶部 */
+.top-btn{
+  position:fixed;right:18px;bottom:22px;z-index:60;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);
+  background:var(--paper);color:var(--rose-deep);font-size:18px;cursor:pointer;
+  box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;
+}
+.top-btn.show{opacity:1;pointer-events:auto}
+.top-btn:hover{transform:translateY(-3px)}
+
+/* 响应式 */
+@media(max-width:980px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-art{max-width:440px;margin:0 auto}
+  .overview-grid,.cat-grid{grid-template-columns:repeat(2,1fr)}
+  .featured-grid,.news-grid,.steps{grid-template-columns:repeat(2,1fr)}
+  .deep-grid,.two-col{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  body{font-size:15.5px}
+  .head-inner{padding:8px 14px;gap:10px}
+  .nav-toggle{display:inline-block;margin-left:auto}
+  .main-nav{margin-left:0;width:100%;display:none}
+  .main-nav.open{display:block}
+  .nav-list{flex-direction:column;gap:2px;padding:6px 0}
+  .nav-list a{padding:9px 12px}
+  .head-tools{width:100%}
+  .search-box{width:100%}
+  .search-box input{flex:1;width:auto}
+  .overview-grid,.featured-grid,.cat-grid,.news-grid,.steps,.cmt-grid,.foot-top{grid-template-columns:1fr}
+  .upd-list li{flex-wrap:wrap;gap:4px 10px}
+  .upd-list time{width:auto}
+  .hero-meta{gap:16px}
+  .hero-quote{position:static;max-width:100%;margin-top:12px}
+  .top-btn{right:12px;bottom:16px;width:40px;height:40px}
+  .foot-links{columns:1}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.cat-item:hover,.top-btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce" role="region" aria-label="站内公告">
+    <div class="announce-inner">
+      <span><b>天天夜夜狠狠的爱</b> 第41章“旧钥匙”于11月6日晚8点更新</span>
+      <span class="dot">·</span>
+      <span>11月8日 20:00 作者在线答疑，主题：女二号的选择</span>
+    </div>
+  </div>
+
+  <header class="site-head" id="top">
+    <div class="head-inner">
+      <div class="brand">
+        <svg viewBox="0 0 64 64" role="img" aria-label="双环相扣的心形标志">
+          <rect width="64" height="64" rx="14" fill="#6d2a3a"/>
+          <circle cx="26" cy="27" r="13" fill="none" stroke="#f3dde0" stroke-width="2.5"/>
+          <circle cx="40" cy="27" r="13" fill="none" stroke="#b98a3d" stroke-width="2.5"/>
+          <path d="M32 48c-9-6-15-11-15-17.5A7.5 7.5 0 0 1 32 26a7.5 7.5 0 0 1 15 4.5C47 37 41 42 32 48z" fill="#f5d3b3" opacity=".92"/>
+        </svg>
+        <span class="brand-text">
+          <span class="name">天天夜夜狠狠的爱</span>
+          <span class="sub">长篇连载 · 共读</span>
+        </span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">栏目菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <ul class="nav-list">
+          <li><a href="/#overview">故事概览</a></li>
+          <li><a href="/#featured">精选章节</a></li>
+          <li><a href="/#updates">更新日历</a></li>
+          <li><a href="/#channels">剧情频道</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">阅读指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">读者短评</a></li>
+          <li><a href="/#news">连载资讯</a></li>
+          <li><a href="/#rank">章节榜单</a></li>
+        </ul>
+      </nav>
+      <div class="head-tools">
+        <div class="search-box" role="search">
+          <label for="siteSearch" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">站内查找</label>
+          <input id="siteSearch" type="search" placeholder="找章节 / 人物" autocomplete="off">
+          <button id="searchBtn" type="button">查找</button>
+        </div>
+      </div>
+    </div>
+    <div class="announce-inner" style="background:none;padding-bottom:0">
+      <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite" style="max-width:1180px;margin:0 auto"></div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="hero" aria-labelledby="heroH1">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-tag">都市长篇 · 41章连载中</span>
+      <h1 id="heroH1">天天夜夜狠狠的爱</h1>
+      <p class="hero-lead">两座城市、八年时差。编辑沈栀在旧写字楼里整理退稿，建筑监理程野在江对岸盯一座迟迟不开工的桥。故事从一封被退回的信开始，把承诺摊在通勤、房租和家庭饭桌上反复掂量。</p>
+      <div class="hero-meta">
+        <span><b>41</b>已更新章节</span>
+        <span><b>6</b>主要人物线</span>
+        <span><b>11-06</b>最近更新</span>
+        <span><b>8.7</b>读者评分</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#featured">从第38章读起</a>
+        <a class="btn btn-ghost" href="/#guide">新读者入口</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="false">
+      <svg viewBox="0 0 420 320" role="img" aria-label="两座城市隔江相望、中间一座未完工的桥的原创插画">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f6e2dc"/>
+            <stop offset="100%" stop-color="#fbf3ea"/>
+          </linearGradient>
+          <linearGradient id="river" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e7cfc6"/>
+            <stop offset="100%" stop-color="#d9bdb2"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="420" height="320" rx="18" fill="url(#sky)"/>
+        <circle cx="330" cy="70" r="30" fill="#f3c98f" opacity=".85"/>
+        <rect x="0" y="190" width="420" height="130" fill="url(#river)"/>
+        <g fill="#8c2f45" opacity=".85">
+          <rect x="34" y="120" width="34" height="78" rx="3"/>
+          <rect x="74" y="98" width="26" height="100" rx="3"/>
+          <rect x="106" y="136" width="38" height="62" rx="3"/>
+        </g>
+        <g fill="#6d2a3a" opacity=".9">
+          <rect x="286" y="108" width="30" height="90" rx="3"/>
+          <rect x="322" y="132" width="42" height="66" rx="3"/>
+          <rect x="370" y="118" width="24" height="80" rx="3"/>
+        </g>
+        <g stroke="#b98a3d" stroke-width="3" fill="none" opacity=".9">
+          <path d="M150 200c20-26 40-26 60 0s40 26 60 0"/>
+          <path d="M150 200v-26M210 200v-34M270 200v-26"/>
+        </g>
+        <g stroke="#8c2f45" stroke-width="2" fill="none" opacity=".55">
+          <path d="M170 210c18-14 34-14 50 0s34 14 50 0"/>
+          <path d="M160 226c22-16 40-16 60 0s40 16 60 0"/>
+        </g>
+        <circle cx="120" cy="60" r="3" fill="#8c2f45" opacity=".6"/>
+        <circle cx="150" cy="42" r="2" fill="#b98a3d" opacity=".7"/>
+        <circle cx="238" cy="58" r="2.5" fill="#8c2f45" opacity=".5"/>
+      </svg>
+      <div class="hero-quote">“桥合龙那天，她说先把信还我。”<br>——第40章结尾原句</div>
+    </div>
+  </div>
+</section>
+
+<!-- 领域概览 -->
+<section class="section" id="overview" aria-labelledby="ovH2">
+  <div class="sec-head">
+    <span class="kicker">OVERVIEW</span>
+    <h2 id="ovH2">故事概览：人物、地点与叙事节奏</h2>
+  </div>
+  <p class="sec-desc">全书按季节分卷，目前已进入第三卷“合龙”。情节主要在江北旧城、江南新区和往返两地的通勤轨道上展开，人物关系随工程进度逐步显形。</p>
+  <div class="grid overview-grid">
+    <div class="ov-item">
+      <span class="num">41</span>
+      <span class="lab">正文章节</span>
+      <p>最短的一章1900字，最长的一章4300字，平均每章约2900字。</p>
+    </div>
+    <div class="ov-item">
+      <span class="num">3</span>
+      <span class="lab">分卷结构</span>
+      <p>第一卷“退稿”、第二卷“延期”、第三卷“合龙”，每卷14章上下。</p>
+    </div>
+    <div class="ov-item">
+      <span class="num">6</span>
+      <span class="lab">主要人物</span>
+      <p>沈栀、程野、周砚、沈母、监理老康、同事林小满，各有独立支线。</p>
+    </div>
+    <div class="ov-item">
+      <span class="num">2</span>
+      <span class="lab">核心地点</span>
+      <p>江北旧城区的出版社老楼，江南新区的跨江桥工地。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 精选推荐 -->
+<section class="section" id="featured" aria-labelledby="featH2">
+  <div class="sec-head">
+    <span class="kicker">SELECTED</span>
+    <h2 id="featH2">精选章节推荐：三个适合入门的读法</h2>
+  </div>
+  <p class="sec-desc">没读过前文也能进入。三章分别对应人物、冲突和转折，顺序可自行调整，每章开头都有简短前情提示。</p>
+  <div class="grid featured-grid">
+    <article class="feat-card">
+      <img src="https://picsum.photos/seed/ttyy-key/560/300" width="560" height="300" loading="lazy" alt="旧写字楼走廊尽头的木门与信封特写" style="object-fit:cover">
+      <div class="feat-body">
+        <h3>第12章 退稿信上的第二个签名</h3>
+        <p>沈栀在退稿单背面发现程野的名字。一场关于“谁先改了结尾”的争论，把两人八年没联系的原因推到台面上。</p>
+        <div class="meta-row"><span class="pill">人物线</span><span>3200字</span><span>10月14日</span></div>
+      </div>
+    </article>
+    <article class="feat-card">
+      <img src="https://picsum.photos/seed/ttyy-bridge/560/300" width="560" height="300" loading="lazy" alt="江面桥墩施工脚手架与测量仪器" style="object-fit:cover">
+      <div class="feat-body">
+        <h3>第27章 合龙前夜的三次测量</h3>
+        <p>工程因温差出现两厘米偏差，程野坚持复测。监理老康一句“工期不等人”让现场气氛降到冰点。</p>
+        <div class="meta-row"><span class="pill">冲突</span><span>4100字</span><span>10月23日</span></div>
+      </div>
+    </article>
+    <article class="feat-card">
+      <img src="https://picsum.photos/seed/ttyy-letter/560/300" width="560" height="300" loading="lazy" alt="台灯下摊开的信纸与钢笔" style="object-fit:cover">
+      <div class="feat-body">
+        <h3>第38章 旧钥匙与没寄出的信</h3>
+        <p>沈栀搬离老楼，在抽屉夹层翻出一封没贴邮票的信。信里写的事，与程野后来告诉她的版本对不上。</p>
+        <div class="meta-row"><span class="pill">转折</span><span>3600字</span><span>11月3日</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 双栏：最新更新 + 侧栏 -->
+<div class="section" style="padding-top:0">
+  <div class="two-col">
+    <section id="updates" aria-labelledby="updH2">
+      <div class="sec-head">
+        <span class="kicker">UPDATES</span>
+        <h2 id="updH2">最新更新与连载日历</h2>
+      </div>
+      <p class="sec-desc">更新节奏为每周三、周六晚八点。以下列出近两周实际发布记录，含字数与改动说明。</p>
+      <ul class="upd-list">
+        <li><time datetime="2026-11-06">11月6日</time><span class="tag">正文</span><span><a href="/#featured">第41章 旧钥匙</a> · 3400字，补写了程野与老康在工棚的对话</span></li>
+        <li><time datetime="2026-11-04">11月4日</time><span class="tag">修订</span><span><a href="/#deep">第27章</a> 测量数据由“三毫米”改为“两厘米”，与第40章呼应</span></li>
+        <li><time datetime="2026-11-01">11月1日</time><span class="tag">番外</span><span><a href="/#comments">番外《林小满的加班餐》</a> · 1700字，独立成篇</span></li>
+        <li><time datetime="2026-10-29">10月29日</time><span class="tag">正文</span><span><a href="/#featured">第40章 合龙</a> · 3900字，桥体合龙，沈栀未到场</span></li>
+        <li><time datetime="2026-10-25">10月25日</time><span class="tag">正文</span><span><a href="/#featured">第39章 搬家清单</a> · 2900字，含沈母首次正面出场</span></li>
+      </ul>
+      <p class="mini-note" style="margin-top:14px">11月8日晚的在线答疑已收集47条提问，其中19条与女二号周砚的退场安排有关，作者将按章节顺序回答。</p>
+    </section>
+
+    <aside aria-label="阅读辅助">
+      <div class="side-card">
+        <h3>人物速查</h3>
+        <ul>
+          <li>沈栀 · 出版社编辑，31岁，江北旧城</li>
+          <li>程野 · 建筑监理，33岁，常驻江南工地</li>
+          <li>周砚 · 结构工程师，程野前同事</li>
+          <li>沈母 · 退休教师，反对沈栀辞职</li>
+          <li>老康 · 监理组长，口头禅“工期不等人”</li>
+          <li>林小满 · 编辑部实习生，负责校对</li>
+        </ul>
+        <p class="mini-note">人物年龄以第41章正文为准。</p>
+      </div>
+      <div class="side-card">
+        <h3>阅读进度建议</h3>
+        <ul>
+          <li>第一次读：第38章 → 第12章 → 第27章</li>
+          <li>补背景：第1至11章，约3.1万字</li>
+          <li>追人物线：第19、23、35章</li>
+        </ul>
+        <p class="mini-note">章节间跳读不影响理解主线。</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- 分类入口 -->
+<section class="section" id="channels" aria-labelledby="catH2">
+  <div class="sec-head">
+    <span class="kicker">CHANNELS</span>
+    <h2 id="catH2">剧情频道：按你关心的线索进入</h2>
+  </div>
+  <p class="sec-desc">十个频道覆盖主要阅读需求。每个频道页首条为导读，其后按章节时间排列。</p>
+  <div class="grid cat-grid">
+    <div class="cat-item"><h3>人物关系梳理</h3><p>沈栀与程野八年断联的完整时间线，含三次误会节点。</p></div>
+    <div class="cat-item"><h3>分章阅读顺序</h3><p>两种读法：按卷顺序，或按人物线跳读。</p></div>
+    <div class="cat-item"><h3>桥工程进度线</h3><p>从围堰到合龙的施工节点，与情节转折逐条对照。</p></div>
+    <div class="cat-item"><h3>家庭饭桌戏</h3><p>沈母出场章节汇总，含第39章搬家冲突全文。</p></div>
+    <div class="cat-item"><h3>退稿信原文</h3><p>第12章出现的退稿单完整文字与批注还原。</p></div>
+    <div class="cat-item"><h3>职场支线</h3><p>出版社改制、编辑部裁员相关章节合集。</p></div>
+    <div class="cat-item"><h3>通勤轨道场景</h3><p>跨江地铁上发生的七次对话，按时间排列。</p></div>
+    <div class="cat-item"><h3>番外短篇</h3><p>独立成篇的配角故事，目前三篇，可单独阅读。</p></div>
+    <div class="cat-item"><h3>作者修订记录</h3><p>逐章列出改动内容与改动原因，含数据修正。</p></div>
+    <div class="cat-item"><h3>读者提问归档</h3><p>答疑活动问答整理，按主题分组，标注日期。</p></div>
+  </div>
+</section>
+
+<!-- 深度解析 -->
+<section class="deep" id="deep" aria-labelledby="deepH2">
+  <div class="section">
+    <div class="sec-head">
+      <span class="kicker">ANALYSIS</span>
+      <h2 id="deepH2">深度解析：这场重逢写得到底像不像真的</h2>
+    </div>
+    <p class="sec-desc">以下判断都可以被反驳。每一条给出可核对的位置，读者可回到章节自行比对。</p>
+    <div class="deep-grid">
+      <article class="deep-main">
+        <h3>一、断联八年这个设定，靠“信没寄出”撑不住</h3>
+        <p>第12章交代，沈栀与程野在2018年秋因一封退稿信产生争执，此后不再联系。第38章又说，沈栀在抽屉夹层找到一封没贴邮票的信，写于2019年3月，内容是道歉。问题在于：这封信如果从未寄出，程野就不会知道沈栀曾经试图解释，而第40章程野却说“我知道你写过”。两处对不上。</p>
+        <p>第41章给了补丁——程野看到的是沈栀发在编辑部内部论坛的帖子，不是信。这个解释勉强成立，但代价是“旧钥匙”这一章的标题暗示被削弱：钥匙原本对应抽屉，如今指向论坛账号，意象断裂。读者可以核对第38章第6段与第40章第12段。</p>
+        <blockquote>可反驳之处：若作者在下一次修订中把论坛帖子的发布时间改到2019年3月之前，前后矛盾即可消除，但“没寄出的信”作为情感支点仍然偏轻。</blockquote>
+
+        <h3>二、程野的三次测量写得比感情戏扎实</h3>
+        <p>第27章写合龙前夜温差导致两厘米偏差，程野坚持复测。这一段有三个具体动作：读取温度计、对照施工日志、打电话给设计院。时间点是凌晨2点17分，现场只有四个人。老康说“工期不等人”之后，程野没有反驳，只是把复测记录抄进自己的本子。这个处理比后面第40章两人在江边的长谈更有说服力。</p>
+        <p>对比第35章沈栀在编辑部校对稿件的段落：同样是夜间工作，沈栀的动机写成了“想证明自己还能留下来”，偏空。程野的动机是可以被检验的——偏差两厘米是否在验收标准内，书里给了数据，读者可以查桥梁施工的一般规范去比对。</p>
+
+        <h3>三、周砚的退场安排与前期人设冲突</h3>
+        <p>周砚在第19章登场，身份是结构工程师、程野前同事。第23章她主动帮沈栀查资料，第29章两人还一起吃了饭。到第37章，她突然以“调去外地项目”收尾，只用了一段话。前期铺垫了八个章节的人物，退场只给300字，显得仓促。</p>
+        <p>作者在11月4日的修订说明里写，周砚的线“会在番外补完”。这属于事后补充，不是正文解决。读者评论里已有三条提到这一点，其中一条直接引用了第37章的原文：“她说走就走，连行李都没交代。”</p>
+
+        <h3>四、把可核对的信息拆开看</h3>
+        <table class="fact-table">
+          <caption style="text-align:left;font-size:12.5px;color:#7a6469;padding-bottom:6px">表：三处关键信息的来源与可信度</caption>
+          <thead>
+            <tr><th scope="col">信息</th><th scope="col">出处</th><th scope="col">性质</th><th scope="col">能否核对</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>断联始于2018年秋</td><td>第12章第3段</td><td>正文陈述</td><td>可，章节内明确写年份</td></tr>
+            <tr><td>程野知道沈栀写过解释</td><td>第40章第12段</td><td>人物自述</td><td>可，但与第38章冲突</td></tr>
+            <tr><td>周砚调离是“公司安排”</td><td>第37章末段</td><td>转述</td><td>难，书内无第三方佐证</td></tr>
+            <tr><td>论坛帖子发布时间为2019年3月</td><td>第41章第9段</td><td>作者补充</td><td>可，属修订后新增</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:14px">这张表的作用不是给结论，而是把“哪些是写死的、哪些是人物说的、哪些是作者后补的”分开。分开之后第37章的问题更清楚：它给出的唯一解释是转述，没有第二个人物印证。</p>
+      </article>
+
+      <aside class="side-note" aria-label="解析侧注">
+        <div class="card">
+          <h3 style="font-size:15px;color:#6d2a3a;margin-bottom:8px">三个待核对的点</h3>
+          <ul class="claim-list">
+            <li>第38章信件日期与第41章论坛帖时间是否同一周</li>
+            <li>两厘米偏差在验收标准内还是外，书中未写明规范编号</li>
+            <li>周砚调离是否有书面通知，第37章未提及</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="font-size:15px;color:#6d2a3a;margin-bottom:8px">读者可自行验证</h3>
+          <p style="font-size:13px;color:#4d3b40;margin:0">打开第27章与第40章，搜索“两厘米”，两处数字一致；搜索“三毫米”，只在11月4日前的旧版本中出现。修订记录页保留了旧版截图文字描述。</p>
+        </div>
+        <div class="card" style="margin-bottom:0">
+          <h3 style="font-size:15px;color:#6d2a3a;margin-bottom:8px">一句可被反驳的判断</h3>
+          <p style="font-size:13px;color:#4d3b40;margin:0">如果后续章节不补周砚的书面调令，这条人物线就只是被移走，不是被写完。反之，若第43章给出调令原文，前面的仓促感可以部分抵消。</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 体验指南 -->
+<section class="section" id="guide" aria-labelledby="guideH2">
+  <div class="sec-head">
+    <span class="kicker">GUIDE</span>
+    <h2 id="guideH2">体验指南：从哪一章开始读最省力</h2>
+  </div>
+  <p class="sec-desc">按阅读目的分三步走。第一次进入不必从第1章硬啃，先建立人物印象，再补背景。</p>
+  <ol class="steps">
+    <li>
+      <h3>先读第38章，认人</h3>
+      <p>这一章沈栀、程野、沈母三人同场，冲突集中，人物说话方式一次看清。读完能判断自己是否吃得下这个叙事节奏。</p>
+    </li>
+    <li>
+      <h3>再读第12章，补前因</h3>
+      <p>退稿信是全书第一个具体物件。第12章交代了两人断联的直接起因，约3200字，地铁通勤一趟能读完。</p>
+    </li>
+    <li>
+      <h3>回头读第27章，看专业线</h3>
+      <p>工程线的密度集中在这一章。读完后对“两厘米”这个反复出现的数字会有实感，第40章的合龙才有重量。</p>
+    </li>
+  </ol>
+  <p style="margin-top:18px;font-size:14px;color:#4d3b40">读完全书约12.3万字，按每章2900字计算，每天读两章，三周可跟上更新进度。番外三篇不计入统计，可跳过。</p>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" aria-labelledby="faqH2">
+  <div class="sec-head">
+    <span class="kicker">FAQ</span>
+    <h2 id="faqH2">常见问题</h2>
+  </div>
+  <div class="faq-wrap">
+    <details>
+      <summary>沈栀和程野最后在一起了吗？</summary>
+      <div class="a">截至第41章，两人没有明确复合。第40章桥体合龙当天，沈栀没有到场，程野把原本要交出的旧钥匙放回了工棚抽屉。正文没有写后续，作者在11月6日的更新说明里只说“第三卷还没收尾”。</div>
+    </details>
+    <details>
+      <summary>周砚的调离是真是假？</summary>
+      <div class="a">第37章写的是“公司安排去外地项目”，由程野转述，周砚本人没有直接说明。第41章也没有补充书面通知。按书内信息判断，这是转述层面的说法，不能当作已经确认的事实。</div>
+    </details>
+    <details>
+      <summary>两厘米偏差在桥梁施工里严不严重？</summary>
+      <div class="a">书中没有给出验收规范编号，只写了温差导致的测量差异和复测过程。程野坚持复测，老康主张按期推进，两人的分歧在于是否等温度稳定。这个分歧在书里没有被判定谁对，第27章结尾只记录了复测结果。</div>
+    </details>
+    <details>
+      <summary>不读第1至11章会不会看不懂？</summary>
+      <div class="a">不会。每章开头有前情提示，主要人物在第12章前后已全部出现。第1至11章补的是沈栀在出版社的具体处境，包括改制和裁员，跳过不影响主线，但会少一层她为什么不肯辞职的理由。</div>
+    </details>
+    <details>
+      <summary>番外和正文时间线是什么关系？</summary>
+      <div class="a">三篇番外分别写林小满的加班餐、老康的退休前一周、周砚在外地项目的第一天。前两篇发生在正文第38至41章之间，第三篇时间在第41章之后，属于补写人物去向。</div>
+    </details>
+    <details>
+      <summary>更新会延期吗？</summary>
+      <div class="a">作者在10月29日更新说明里写了“如遇工程线资料核查，可能延后一天”。近两周实际发布记录为10月29日、11月1日、11月4日、11月6日，均未超过一天。11月8日的答疑属额外活动，不计入正文更新。</div>
+    </details>
+  </div>
+</section>
+
+<!-- 评论 -->
+<section class="section" id="comments" aria-labelledby="cmtH2">
+  <div class="sec-head">
+    <span class="kicker">COMMENTS</span>
+    <h2 id="cmtH2">读者短评：具体到章节的几种看法</h2>
+  </div>
+  <p class="sec-desc">以下为示例评论，按发布时间排列，含正面、中性与会挑问题的意见。</p>
+  <div class="grid cmt-grid">
+    <article class="cmt">
+      <div class="cmt-top"><span class="avatar">李</span><span class="who">李知微</span><span class="when">11月6日 22:14</span></div>
+      <p>第41章把论坛帖子拿出来解释信的事，我读了两遍才顺过来。不是说不能这么写，是这样一来“旧钥匙”这个标题就有点空。钥匙明明还在抽屉里，情感落点却跑到网上去了。</p>
+      <span class="ref">指向：第41章第9段</span>
+    </article>
+    <article class="cmt">
+      <div class="cmt-top"><span class="avatar b">陈</span><span class="who">陈默</span><span class="when">11月5日 09:32</span></div>
+      <p>第27章是我最喜欢的。凌晨两点十七分，四个人，一个温度计，一个本子。老康那句“工期不等人”之后程野没顶嘴，只是抄记录，这个反应比任何表白都像干工程的人。</p>
+      <span class="ref">指向：第27章复测段</span>
+    </article>
+    <article class="cmt">
+      <div class="cmt-top"><span class="avatar c">周</span><span class="who">周家宁</span><span class="when">11月4日 18:07</span></div>
+      <p>修订把“三毫米”改成“两厘米”，前后是能对上了。但旧版我也看过，三毫米的时候合龙的紧张感更强一点。这是我个人口味，不算问题。</p>
+      <span class="ref">指向：11月4日修订记录</span>
+    </article>
+    <article class="cmt">
+      <div class="cmt-top"><span class="avatar d">苏</span><span class="who">苏晚照</span><span class="when">11月3日 20:48</span></div>
+      <p>沈母第39章出场那段写得准。退休教师讲话有停顿，不说重话，但每句都往辞职这件事上带。沈栀在她面前明显换了个说话方式，少了跟程野说话时的硬气。</p>
+      <span class="ref">指向：第39章搬家冲突</span>
+    </article>
+    <article class="cmt">
+      <div class="cmt-top"><span class="avatar b">郑</span><span class="who">郑一鸣</span><span class="when">11月2日 13:20</span></div>
+      <p>周砚走得太快了。第23章她替沈栀查资料的时候我觉得这条线有戏，结果第37章一段话就没了。作者说番外补，可番外是番外，正文读到这里就是断的。</p>
+      <span class="ref">指向：第37章末段</span>
+    </article>
+    <article class="cmt">
+      <div class="cmt-top"><span class="avatar">吴</span><span class="who">吴其</span><span class="when">11月1日 08:05</span></div>
+      <p>番外《林小满的加班餐》挺松弛的。1700字不写感情，只写校对稿和外卖，反而把编辑部那栋老楼的日常写出来了。比正文里几段长对话舒服。</p>
+      <span class="ref">指向：11月1日番外</span>
+    </article>
+  </div>
+</section>
+
+<!-- 资讯 -->
+<section class="section" id="news" aria-labelledby="newsH2">
+  <div class="sec-head">
+    <span class="kicker">NEWS</span>
+    <h2 id="newsH2">连载相关资讯</h2>
+  </div>
+  <p class="sec-desc">只记录与章节、修订、活动有关的事实，每条标注日期与信息来源。</p>
+  <div class="grid news-grid">
+    <article class="news-item">
+      <time datetime="2026-11-08">11月8日</time>
+      <h3>线上答疑已收到47条提问</h3>
+      <p>其中19条问周砚退场，11条问两厘米偏差的规范依据。答疑整理稿计划在11月10日归档到“读者提问归档”频道。</p>
+    </article>
+    <article class="news-item">
+      <time datetime="2026-11-06">11月6日</time>
+      <h3>第41章更新说明提到第三卷收尾</h3>
+      <p>作者写明第三卷“还剩四章左右”，合龙之后的情节会回到出版社改制这条线，桥的场景将减少。</p>
+    </article>
+    <article class="news-item">
+      <time datetime="2026-11-04">11月4日</time>
+      <h3>第27章数据修订完成</h3>
+      <p>作者把“三毫米”统一改为“两厘米”，并补了一张测量记录表在章节末尾。旧版对照说明放在修订记录频道。</p>
+    </article>
+  </div>
+</section>
+
+<!-- 榜单 -->
+<section class="section" id="rank" aria-labelledby="rankH2">
+  <div class="sec-head">
+    <span class="kicker">RANKING</span>
+    <h2 id="rankH2">章节榜单：按读者重读次数排序</h2>
+  </div>
+  <p class="sec-desc">统计口径为10月9日至11月8日的站内重读次数，每章只计一次完整阅读，跳读不计入。</p>
+  <ol class="rank-list">
+    <li><div><h3>第27章 合龙前夜的三次测量</h3><p>重读集中在复测段，读者多回看温度与时间的细节。</p></div><span class="sc">482次</span></li>
+    <li><div><h3>第38章 旧钥匙与没寄出的信</h3><p>11月6日后重读上升，与第41章的补写形成对照阅读。</p></div><span class="sc">415次</span></li>
+    <li><div><h3>第12章 退稿信上的第二个签名</h3><p>新读者入口章节，长期稳定在前三。</p></div><span class="sc">397次</span></li>
+    <li><div><h3>第39章 搬家清单</h3><p>沈母出场段落被反复引用，评论多指向饭桌对话。</p></div><span class="sc">288次</span></li>
+    <li><div><h3>第40章 合龙</h3><p>结尾原句被读者引用最多，但重读次数低于前四章。</p></div><span class="sc">254次</span></li>
+  </ol>
+</section>
+
+<!-- 相关推荐 -->
+<section class="section" id="tags" aria-labelledby="tagH2">
+  <div class="sec-head">
+    <span class="kicker">TAGS</span>
+    <h2 id="tagH2">相关推荐：按关键词找章节</h2>
+  </div>
+  <p class="sec-desc">标签来自读者搜索记录与章节内容，点开可进入对应频道或章节列表。</p>
+  <div class="tagcloud">
+    <a href="/#featured">退稿信第二个签名</a>
+    <a href="/#deep">合龙前夜三次测量</a>
+    <a href="/#guide">沈母饭桌对话</a>
+    <a href="/#comments">周砚调离原文</a>
+    <a href="/#updates">两厘米偏差修订</a>
+    <a href="/#channels">跨江通勤七次对话</a>
+    <a href="/#faq">旧钥匙意象</a>
+    <a href="/#news">第三卷还剩四章</a>
+    <a href="/#featured">林小满加班餐番外</a>
+    <a href="/#rank">重读次数最高章节</a>
+    <a href="/#guide">每天两章三周进度</a>
+    <a href="/#channels">作者修订记录</a>
+  </div>
+</section>
+
+<footer class="site-foot" id="about">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-label="页脚心形标志">
+            <rect width="64" height="64" rx="14" fill="#8c2f45"/>
+            <circle cx="26" cy="27" r="13" fill="none" stroke="#f3dde0" stroke-width="2.5"/>
+            <circle cx="40" cy="27" r="13" fill="none" stroke="#b98a3d" stroke-width="2.5"/>
+            <path d="M32 48c-9-6-15-11-15-17.5A7.5 7.5 0 0 1 32 26a7.5 7.5 0 0 1 15 4.5C47 37 41 42 32 48z" fill="#f5d3b3"/>
+          </svg>
+          <span class="name">天天夜夜狠狠的爱</span>
+        </div>
+        <p class="foot-desc">一部长篇都市连载的共读站点。记录章节、修订、人物线索与读者意见，供追更与跳读使用。</p>
+      </div>
+      <div>
+        <h3>栏目入口</h3>
+        <ul class="foot-links">
+          <li><a href="/#overview">故事概览</a></li>
+          <li><a href="/#featured">精选章节</a></li>
+          <li><a href="/#updates">更新日历</a></li>
+          <li><a href="/#channels">剧情频道</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">读者短评</a></li>
+          <li><a href="/#news">连载资讯</a></li>
+          <li><a href="/#rank">章节榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>数据说明</h3>
+        <p style="font-size:13px;color:#b7a5a2;line-height:1.8;margin:0 0 10px">章节字数、重读次数、评论与提问数量均为示例数据，用于展示版面结构，不代表真实统计结果。人物、事件与工程细节为虚构内容。</p>
+        <p style="font-size:12.5px;color:#998784;margin:0">更新时间：2026年11月8日，对应第41章发布与第27章修订完成两项正文可核对更新。</p>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p>站内链接均指向本域页面内栏目锚点，不涉及外部交易或下载。</p>
+      <div class="foot-bottom">
+        <span>© 2026 天天夜夜狠狠的爱 共读站</span>
+        <span>内容为示例生成，仅用于阅读与讨论</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="top-btn" id="topBtn" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.textContent = open ? '收起菜单' : '栏目菜单';
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.innerWidth <= 680) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+        toggle.textContent = '栏目菜单';
+      }
+    });
+  }
+
+  /* 本地搜索 */
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var fb = document.getElementById('searchFeedback');
+
+  function normalize(s){ return (s || '').replace(/\s+/g,'').toLowerCase(); }
+
+  function doSearch(){
+    if (!input || !fb) return;
+    var q = normalize(input.value);
+    if (!q) {
+      fb.textContent = '请输入章节名、人物名或关键词，例如“周砚”或“合龙”。';
+      fb.classList.add('show');
+      return;
+    }
+    var hits = [];
+    var nodes = document.querySelectorAll('h2, h3, summary, li, p, a, span');
+    nodes.forEach(function(el){
+      var text = normalize(el.textContent);
+      if (!text) return;
+      if (text.indexOf(q) === -1) return;
+      var anchor = el.closest('section, aside, article, details');
+      if (!anchor) return;
+      var id = anchor.id;
+      if (!id) return;
+      if (hits.indexOf(id) === -1) hits.push(id);
+    });
+    if (hits.length === 0) {
+      fb.textContent = '未找到与“' + input.value.trim() + '”相关的内容。可以试试“退稿信”“两厘米”“周砚”“番外”。';
+      fb.classList.add('show');
+      return;
+    }
+    var names = {overview:'故事概览',featured:'精选章节',updates:'更新日历',channels:'剧情频道',deep:'深度解析',guide:'体验指南',faq:'常见问题',comments:'读者短评',news:'连载资讯',rank:'章节榜单',tags:'相关推荐',top:'页头'};
+    var label = hits.map(function(id){ return names[id] || id; }).join('、');
+    fb.textContent = '找到 ' + hits.length + ' 个相关板块：' + label + '。已跳转到第一个结果。';
+    fb.classList.add('show');
+    var first = document.getElementById(hits[0]);
+    if (first) first.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  if (btn) btn.addEventListener('click', doSearch);
+  if (input) input.addEventListener('keydown', function(e){
+    if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+  });
+
+  /* 滚动高亮 */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-list a'));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function highlight(){
+    var pos = window.scrollY + 140;
+    var current = null;
+    sections.forEach(function(sec){
+      if (sec.offsetTop <= pos) current = sec.id;
+    });
+    navLinks.forEach(function(a){
+      var id = a.getAttribute('href').replace('/#','');
+      a.classList.toggle('is-active', id === current);
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('topBtn');
+  function toggleTop(){
+    if (!topBtn) return;
+    if (window.scrollY > 480) topBtn.classList.add('show');
+    else topBtn.classList.remove('show');
+  }
+  window.addEventListener('scroll', toggleTop, {passive:true});
+  toggleTop();
+  if (topBtn) topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 平滑滚动偏移 */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="/#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(2);
+    var target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    var offset = 118;
+    var y = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({top: y < 0 ? 0 : y, behavior:'smooth'});
+    if (nav && nav.classList.contains('open') && window.innerWidth <= 680 && toggle) {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.textContent = '栏目菜单';
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "天天夜夜狠狠的爱",
+  "description": "都市长篇连载天天夜夜狠狠的爱共读站，提供章节推荐、更新日历、人物速查、深度解析与读者短评。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "沈栀和程野最后在一起了吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "截至第41章，两人没有明确复合。第40章桥体合龙当天，沈栀没有到场，程野把原本要交出的旧钥匙放回了工棚抽屉。正文没有写后续，作者在11月6日的更新说明里只说第三卷还没收尾。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "周砚的调离是真是假？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "第37章写的是公司安排去外地项目，由程野转述，周砚本人没有直接说明。第41章也没有补充书面通知。按书内信息判断，这是转述层面的说法。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "两厘米偏差在桥梁施工里严不严重？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "书中没有给出验收规范编号，只写了温差导致的测量差异和复测过程。程野坚持复测，老康主张按期推进，两人的分歧在于是否等温度稳定，书里没有判定谁对。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "不读第1至11章会不会看不懂？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不会。每章开头有前情提示，主要人物在第12章前后已全部出现。第1至11章补的是沈栀在出版社的具体处境，跳过不影响主线。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "番外和正文时间线是什么关系？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "三篇番外分别写林小满的加班餐、老康的退休前一周、周砚在外地项目的第一天。前两篇发生在正文第38至41章之间，第三篇在第41章之后。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "更新会延期吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "作者在10月29日更新说明里写了如遇工程线资料核查可能延后一天。近两周实际发布均未超过一天。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+        </html>
