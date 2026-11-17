@@ -1,0 +1,1168 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KB绳艺网女烈专区-绳缚教程与安全指南</title>
+<meta name="description" content="KB绳艺网女烈专区聚焦中文绳缚社群中的女烈主题，整理缚法步骤、安全守则、术语对照与真实体验记录，附九宫缚与背缚的区别、松绳检查表及2026年11月更新条目，供入门与进阶者核对。">
+<meta name="keywords" content="KB绳艺网女烈专区">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b1d2a'/%3E%3Cpath d='M18 14c10 12 18 24 28 36M46 14C36 26 28 38 18 50' stroke='%23d9a441' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23b3453f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#241a22;
+  --ink-soft:#4d3f49;
+  --muted:#7c6c77;
+  --paper:#f6efe6;
+  --paper-2:#efe5d8;
+  --card:#fffaf3;
+  --line:#ddcfbf;
+  --brand:#5a2338;
+  --brand-2:#7d2e45;
+  --accent:#c08a2e;
+  --accent-2:#b3453f;
+  --ok:#3f6b52;
+  --radius:14px;
+  --radius-s:8px;
+  --shadow:0 8px 24px rgba(58,35,47,.08);
+  --shadow-s:0 2px 8px rgba(58,35,47,.07);
+  --s1:8px;--s2:14px;--s3:22px;--s4:34px;--s5:52px;
+  --font:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --announce-h:38px;
+  --header-h:62px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--announce-h) + var(--header-h) + 10px)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font);font-size:16px;line-height:1.8;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.35;margin:0}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.3em}
+li{margin-bottom:.35em}
+strong{color:var(--brand)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--s3)}
+.sans{font-family:var(--font-sans)}
+.small{font-size:.85rem;color:var(--muted)}
+.center{text-align:center}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶公告条 ---------- */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:linear-gradient(90deg,#3f1727,#5a2338 55%,#3f1727);
+  color:#f3e2cf;font-family:var(--font-sans);font-size:.82rem;
+  min-height:var(--announce-h);display:flex;align-items:center;
+  border-bottom:1px solid #2c0f1b;
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;width:100%;padding-top:6px;padding-bottom:6px}
+.announce .tag{
+  flex:0 0 auto;background:var(--accent);color:#2c0f1b;font-weight:700;
+  padding:1px 8px;border-radius:99px;font-size:.74rem;letter-spacing:.06em;
+}
+.announce .msg{flex:1 1 auto;min-width:190px;line-height:1.5}
+.announce .msg b{color:#ffd9a0;font-weight:600}
+.announce a{color:#ffd9a0;font-weight:600;white-space:nowrap}
+
+/* ---------- 吸顶页头 ---------- */
+.site-header{
+  position:sticky;top:var(--announce-h);z-index:55;
+  background:rgba(246,239,230,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow-s);
+}
+.header-in{display:flex;align-items:center;gap:var(--s2);min-height:var(--header-h)}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand-mark{width:38px;height:38px;flex:0 0 auto}
+.brand-txt{display:flex;flex-direction:column;line-height:1.1}
+.brand-name{font-size:1.06rem;font-weight:700;color:var(--brand);letter-spacing:.02em;font-family:var(--font-sans)}
+.brand-sub{font-size:.66rem;color:var(--muted);letter-spacing:.22em;font-family:var(--font-sans)}
+.nav{flex:1 1 auto}
+.nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;flex-wrap:wrap;justify-content:flex-end}
+.nav a{
+  display:block;padding:6px 9px;border-radius:99px;font-size:.86rem;
+  color:var(--ink-soft);font-family:var(--font-sans);white-space:nowrap;
+}
+.nav a:hover,.nav a[aria-current="true"]{background:var(--paper-2);color:var(--brand);text-decoration:none}
+.header-actions{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.icon-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  min-width:38px;height:38px;padding:0 12px;border-radius:99px;
+  background:var(--brand);color:#fff5e6;border:none;cursor:pointer;
+  font-family:var(--font-sans);font-size:.84rem;font-weight:600;
+}
+.icon-btn:hover{background:var(--brand-2)}
+.menu-toggle{display:none;background:var(--paper-2);color:var(--brand);border:1px solid var(--line)}
+
+/* 搜索 */
+.search{
+  position:relative;display:flex;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-radius:99px;
+  padding:0 4px 0 12px;height:38px;
+}
+.search input{
+  border:none;background:transparent;outline:none;width:150px;
+  font-family:var(--font-sans);font-size:.86rem;color:var(--ink);height:100%;
+}
+.search button{
+  border:none;background:var(--accent);color:#2c0f1b;font-weight:700;
+  border-radius:99px;padding:6px 12px;cursor:pointer;font-family:var(--font-sans);font-size:.8rem;
+}
+.search-panel{
+  position:absolute;top:calc(100% + 8px);right:0;width:min(360px,86vw);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:8px;max-height:60vh;overflow:auto;z-index:70;
+}
+.search-panel[hidden]{display:none}
+.search-panel .res{display:block;padding:8px 10px;border-radius:var(--radius-s);font-family:var(--font-sans);font-size:.85rem;color:var(--ink)}
+.search-panel .res:hover{background:var(--paper-2);text-decoration:none}
+.search-panel .empty{color:var(--muted);padding:10px;font-family:var(--font-sans);font-size:.85rem}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 420px at 82% -10%,rgba(192,138,46,.18),transparent 60%),
+    radial-gradient(900px 380px at 6% 110%,rgba(90,35,56,.16),transparent 62%),
+    linear-gradient(180deg,#fbf5ec,#f3e8db);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{
+  display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
+  gap:var(--s4);align-items:center;padding-top:var(--s5);padding-bottom:var(--s5);
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-family:var(--font-sans);
+  font-size:.76rem;letter-spacing:.16em;color:var(--brand-2);
+  border:1px solid var(--line);background:rgba(255,250,243,.7);
+  padding:4px 12px;border-radius:99px;margin-bottom:var(--s2);
+}
+.hero h1{
+  font-size:clamp(1.9rem,4.4vw,3.1rem);letter-spacing:.01em;color:var(--brand);
+  margin-bottom:var(--s2);
+}
+.hero h1 em{font-style:normal;color:var(--accent-2)}
+.hero-lead{font-size:1.02rem;color:var(--ink-soft);max-width:34em}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin:var(--s3) 0 var(--s3)}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:99px;
+  font-family:var(--font-sans);font-size:.9rem;font-weight:700;border:1px solid transparent;
+  transition:transform .18s ease,background .18s ease;
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn-primary{background:var(--brand);color:#fff4e3}
+.btn-primary:hover{background:var(--brand-2)}
+.btn-ghost{background:transparent;border-color:var(--brand);color:var(--brand)}
+.btn-ghost:hover{background:rgba(90,35,56,.07)}
+.hero-stats{display:flex;gap:var(--s4);flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:var(--s2)}
+.hero-stats div{line-height:1.4}
+.hero-stats b{display:block;font-size:1.5rem;color:var(--brand);font-family:var(--font-sans)}
+.hero-stats span{font-family:var(--font-sans);font-size:.76rem;color:var(--muted)}
+
+/* 首屏原创视觉 */
+.hero-art{position:relative;aspect-ratio:1/1;max-width:440px;margin-left:auto;width:100%}
+.hero-art svg{width:100%;height:100%;display:block}
+
+/* ---------- 通用板块 ---------- */
+main{padding-bottom:var(--s5)}
+.section{padding:var(--s5) 0 0}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--s2);flex-wrap:wrap;margin-bottom:var(--s3);border-bottom:2px solid var(--brand);padding-bottom:10px}
+.section-head h2{font-size:1.5rem;color:var(--brand)}
+.section-head .kicker{font-family:var(--font-sans);font-size:.76rem;letter-spacing:.16em;color:var(--accent);display:block;margin-bottom:2px}
+.section-head .more{font-family:var(--font-sans);font-size:.82rem;color:var(--brand-2)}
+
+.grid{display:grid;gap:var(--s3)}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--s3);box-shadow:var(--shadow-s);
+}
+.card h3{font-size:1.06rem;color:var(--brand);margin-bottom:6px}
+.card .meta{font-family:var(--font-sans);font-size:.76rem;color:var(--muted);margin-bottom:10px}
+.card p:last-child{margin-bottom:0}
+
+/* 非对称组合 */
+.asym{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:var(--s3)}
+.feature{
+  background:linear-gradient(160deg,#fffaf3,#f3e5d5);
+  border:1px solid var(--line);border-radius:var(--radius);padding:var(--s4);position:relative;overflow:hidden;
+}
+.feature::after{
+  content:"";position:absolute;right:-40px;bottom:-60px;width:190px;height:190px;border-radius:50%;
+  border:22px solid rgba(192,138,46,.16);
+}
+.feature h3{font-size:1.24rem;color:var(--brand);margin-bottom:8px}
+.feature .tags{margin-top:var(--s2)}
+
+/* 紧凑列表 */
+.list-plain{list-style:none;margin:0;padding:0}
+.list-plain li{
+  display:grid;grid-template-columns:66px 1fr auto;gap:10px;align-items:baseline;
+  padding:11px 0;border-bottom:1px dashed var(--line);margin:0;
+}
+.list-plain li:last-child{border-bottom:none}
+.list-plain time{font-family:var(--font-sans);font-size:.76rem;color:var(--accent-2);font-weight:600}
+.list-plain .t{font-size:.95rem}
+.list-plain .t small{display:block;color:var(--muted);font-family:var(--font-sans);font-size:.78rem;font-weight:400}
+.list-plain .tagx{font-family:var(--font-sans);font-size:.72rem;background:var(--paper-2);color:var(--ink-soft);padding:2px 8px;border-radius:99px;white-space:nowrap}
+
+/* 频道索引 */
+.channel-index{display:flex;flex-wrap:wrap;gap:8px}
+.channel-index a{
+  display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:99px;
+  background:var(--card);border:1px solid var(--line);font-family:var(--font-sans);
+  font-size:.86rem;color:var(--ink-soft);
+}
+.channel-index a:hover{border-color:var(--brand-2);color:var(--brand);text-decoration:none;transform:translateY(-2px)}
+.channel-index a b{color:var(--accent-2);font-weight:700;font-size:.74rem}
+
+/* 标签索引 */
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags a,.tags span{
+  font-family:var(--font-sans);font-size:.78rem;padding:3px 10px;border-radius:6px;
+  background:rgba(90,35,56,.07);color:var(--brand-2);border:1px solid rgba(90,35,56,.13);
+}
+.tags a:hover{background:var(--brand);color:#fff3e0;text-decoration:none}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+.compare>div{padding:var(--s3)}
+.compare>div+div{border-left:1px solid var(--line);background:#fdf6ec}
+.compare h3{font-size:1rem;margin-bottom:10px}
+.compare .row{display:grid;grid-template-columns:70px 1fr;gap:8px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:.9rem}
+.compare .row:last-child{border-bottom:none}
+.compare .row b{font-family:var(--font-sans);font-size:.78rem;color:var(--muted);font-weight:600}
+
+/* 编号步骤 */
+.steps{counter-reset:step;display:grid;gap:var(--s2);list-style:none;padding:0;margin:0}
+.steps li{
+  counter-increment:step;position:relative;padding:var(--s2) var(--s2) var(--s2) 58px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin:0;
+}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);position:absolute;left:14px;top:14px;
+  width:32px;height:32px;border-radius:50%;display:grid;place-items:center;
+  background:var(--brand);color:#ffe9c9;font-family:var(--font-sans);font-size:.8rem;font-weight:700;
+}
+.steps li h3{font-size:.98rem;margin-bottom:4px;color:var(--brand)}
+.steps li p{margin:0;font-size:.9rem}
+
+/* 深度解析 */
+.analysis{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(var(--s3),4vw,var(--s4));box-shadow:var(--shadow);
+}
+.analysis h2{font-size:1.55rem;color:var(--brand);margin-bottom:var(--s2)}
+.analysis h3{font-size:1.06rem;color:var(--brand-2);margin:var(--s3) 0 8px}
+.analysis p{font-size:.98rem}
+.judge{
+  border-left:4px solid var(--accent);background:#fdf6ec;padding:var(--s2) var(--s3);
+  border-radius:0 var(--radius-s) var(--radius-s) 0;margin:var(--s2) 0;
+}
+.judge b{display:block;font-family:var(--font-sans);font-size:.76rem;letter-spacing:.14em;color:var(--accent-2);margin-bottom:4px}
+.factbox{
+  border:1px dashed var(--line);border-radius:var(--radius-s);padding:var(--s2);
+  background:rgba(246,239,230,.6);margin:var(--s2) 0;font-size:.92rem;
+}
+.factbox .k{font-family:var(--font-sans);font-size:.76rem;color:var(--muted);letter-spacing:.12em}
+
+/* FAQ */
+.faq{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);overflow:hidden}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:none}
+.faq summary{
+  cursor:pointer;padding:14px var(--s3);font-weight:600;color:var(--brand);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+  font-size:.98rem;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-sans);color:var(--accent-2);font-size:1.2rem;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{padding:0 var(--s3) 16px;color:var(--ink-soft);font-size:.94rem}
+.faq .ans p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s3)}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s3);position:relative}
+.cmt .who{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-family:var(--font-sans);font-size:.82rem}
+.cmt .av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--paper-2);color:var(--brand);font-weight:700;font-size:.8rem}
+.cmt .who b{color:var(--ink)}
+.cmt .who span{color:var(--muted);font-size:.74rem}
+.cmt p{font-size:.9rem;margin:0}
+.cmt .ref{display:inline-block;margin-top:8px;font-family:var(--font-sans);font-size:.74rem;color:var(--accent-2)}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.timeline li{position:relative;margin-bottom:var(--s3)}
+.timeline li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--card);border:3px solid var(--brand-2)}
+.timeline time{font-family:var(--font-sans);font-size:.76rem;color:var(--accent-2);font-weight:700}
+.timeline h3{font-size:1rem;margin:2px 0 4px}
+.timeline p{margin:0;font-size:.9rem;color:var(--ink-soft)}
+
+/* 排行榜 */
+.rank{list-style:none;margin:0;padding:0;counter-reset:r}
+.rank li{
+  display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;
+  padding:11px 0;border-bottom:1px dashed var(--line);
+}
+.rank li:last-child{border-bottom:none}
+.rank li::before{
+  counter-increment:r;content:counter(r);font-family:var(--font-sans);font-weight:700;
+  width:26px;height:26px;display:grid;place-items:center;border-radius:6px;
+  background:var(--paper-2);color:var(--brand);font-size:.82rem;
+}
+.rank li:nth-child(-n+3)::before{background:var(--accent);color:#2c0f1b}
+.rank .nm{font-size:.94rem}
+.rank .nm small{display:block;color:var(--muted);font-family:var(--font-sans);font-size:.76rem}
+.rank .sc{font-family:var(--font-sans);font-size:.78rem;color:var(--brand-2);font-weight:700}
+
+/* 相关资讯 / 推荐 */
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s2)}
+.news-item{display:grid;grid-template-columns:auto 1fr;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s2);align-items:start}
+.news-item time{font-family:var(--font-sans);font-size:.74rem;color:var(--accent-2);font-weight:700;white-space:nowrap;border-right:1px solid var(--line);padding-right:10px}
+.news-item h3{font-size:.94rem;margin-bottom:4px}
+.news-item p{font-size:.85rem;color:var(--ink-soft);margin:0}
+
+.reco{display:flex;flex-wrap:wrap;gap:8px}
+
+/* 引语卡 */
+.quote{
+  background:linear-gradient(150deg,var(--brand),#3f1727);color:#f4e3d0;
+  border-radius:var(--radius);padding:var(--s4);position:relative;overflow:hidden;
+}
+.quote::before{content:"“";position:absolute;top:-18px;left:16px;font-size:8rem;color:rgba(255,255,255,.12);font-family:Georgia,serif}
+.quote p{position:relative;font-size:1.06rem;line-height:1.85;margin-bottom:var(--s2)}
+.quote footer{font-family:var(--font-sans);font-size:.8rem;color:#e0b47c}
+
+/* 补充：可信度分层 */
+.levels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s2)}
+.level{border:1px solid var(--line);border-radius:var(--radius);padding:var(--s2);background:var(--card)}
+.level .lv{font-family:var(--font-sans);font-size:.72rem;letter-spacing:.14em;color:var(--muted);display:block;margin-bottom:4px}
+.level h3{font-size:.96rem;margin-bottom:6px}
+.level ul{margin:0;padding-left:1.1em;font-size:.85rem;color:var(--ink-soft)}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:50;width:46px;height:46px;border-radius:50%;
+  background:var(--brand);color:#ffe9c9;border:none;cursor:pointer;display:grid;place-items:center;
+  box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s;
+}
+.to-top.show{opacity:1;visibility:visible}
+.to-top:hover{transform:translateY(-3px)}
+.to-top svg{width:20px;height:20px}
+
+/* ---------- 页脚 ---------- */
+.site-footer{
+  background:#2b1520;color:#d9c4b4;margin-top:var(--s5);
+  font-family:var(--font-sans);font-size:.88rem;padding-top:var(--s4);
+}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--s3)}
+.site-footer h3{font-size:.94rem;color:#f0d8b6;margin-bottom:10px;letter-spacing:.06em}
+.site-footer a{color:#d9c4b4}
+.site-footer a:hover{color:#ffd9a0;text-decoration:none}
+.footer-brand .bn{font-size:1.1rem;color:#f5e3c8;font-weight:700;margin-bottom:6px}
+.footer-brand p{color:#b99e8d;font-size:.84rem;margin-bottom:8px}
+.footer-list{list-style:none;padding:0;margin:0}
+.footer-list li{margin-bottom:6px}
+.footer-note{
+  border-top:1px solid rgba(255,255,255,.12);margin-top:var(--s3);padding:var(--s2) 0 var(--s3);
+  font-size:.76rem;color:#a88d7d;line-height:1.8;
+}
+.footer-note p{margin:0 0 4px}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1000px){
+  .nav ul{justify-content:flex-start}
+  .hero-in{grid-template-columns:1fr;gap:var(--s3)}
+  .hero-art{max-width:320px;margin:0 auto}
+  .g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .comments{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .asym{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .menu-toggle{display:inline-flex}
+  .search{display:none}
+  .nav{
+    position:absolute;left:0;right:0;top:100%;background:var(--paper);
+    border-bottom:1px solid var(--line);box-shadow:var(--shadow);
+    padding:10px var(--s3);display:none;
+  }
+  .nav.open{display:block}
+  .nav ul{flex-direction:column;gap:2px}
+  .nav a{padding:10px 12px;border-radius:var(--radius-s);font-size:.92rem}
+  .g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .news-grid{grid-template-columns:1fr}
+  .levels{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .compare>div+div{border-left:none;border-top:1px solid var(--line)}
+}
+@media (max-width:600px){
+  :root{--s3:16px;--s4:24px;--s5:36px}
+  .brand-sub{display:none}
+  .g3,.g2,.g4,.comments{grid-template-columns:1fr}
+  .hero-stats{gap:var(--s3)}
+  .hero-stats b{font-size:1.3rem}
+  .list-plain li{grid-template-columns:56px 1fr;row-gap:2px}
+  .list-plain .tagx{grid-column:2}
+  .to-top{right:12px;bottom:14px;width:42px;height:42px}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.channel-index a:hover,.to-top:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" id="announce" role="region" aria-label="更新公告">
+  <div class="wrap">
+    <span class="tag">更新</span>
+    <span class="msg"><b>11月7日</b> 新增「九宫缚与背缚对照表」与松绳检查清单；<b>11月5日</b> 更新女烈主题四套缚法步骤图，补充绳长数据。</span>
+    <a href="/#latest">查看更新记录 →</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header" id="top">
+  <div class="wrap header-in">
+    <a class="brand" href="/#top" aria-label="返回首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="交叉绳结图形标志">
+        <rect width="64" height="64" rx="14" fill="#5a2338"/>
+        <path d="M16 16c11 11 21 21 32 32M48 16C37 27 27 37 16 48" stroke="#d9a441" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+        <circle cx="32" cy="32" r="6.5" fill="#f6efe6"/>
+        <circle cx="32" cy="32" r="3" fill="#b3453f"/>
+      </svg>
+      <span class="brand-txt">
+        <span class="brand-name">KB绳艺网女烈专区</span>
+        <span class="brand-sub">绳缚技艺 · 安全先行</span>
+      </span>
+    </a>
+    <nav class="nav" id="primaryNav" aria-label="主题导航">
+      <ul>
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#featured">精选推荐</a></li>
+        <li><a href="/#latest">最新更新</a></li>
+        <li><a href="/#channels">缛法分类</a></li>
+        <li><a href="/#analysis">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#comments">绳友评论</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="search" role="search">
+        <input id="searchInput" type="search" placeholder="搜缛法 / 术语" aria-label="站内搜索" autocomplete="off">
+        <button type="button" id="searchBtn">查找</button>
+        <div class="search-panel" id="searchPanel" hidden aria-live="polite"></div>
+      </div>
+      <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav">菜单</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="wrap hero-in">
+    <div>
+      <span class="hero-kicker">KB ROPE STUDIO · 女烈专题</span>
+      <h1 id="heroTitle">KB绳艺网女烈专区</h1>
+      <p class="hero-lead">围绕“女烈”这一中文绳缚亚类，记录九宫缚、龟甲缚、背缚三类主流缚法的绳长、打结顺序与松绳时间点。所有步骤以两人协作、剪刀在手为前提，附可打印的检查表与术语对照。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/#analysis">读深度解析</a>
+        <a class="btn btn-ghost" href="/#guide">看体验指南</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>3</b><span>核心缛法体系</span></div>
+        <div><b>12</b><span>术语对照条目</span></div>
+        <div><b>6</b><span>安全检查项</span></div>
+        <div><b>11/07</b><span>最近条目更新</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 440 440" role="img" aria-label="抽象绳线交织构图">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#c08a2e"/><stop offset="1" stop-color="#8a5a1c"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#5a2338"/><stop offset="1" stop-color="#3f1727"/>
+          </linearGradient>
+        </defs>
+        <circle cx="220" cy="220" r="196" fill="#fffaf3" stroke="#ddcfbf"/>
+        <circle cx="220" cy="220" r="160" fill="none" stroke="#e7d8c6" stroke-width="1.5" stroke-dasharray="5 7"/>
+        <path d="M70 150c60 40 120 20 150-30s110-30 150 20" fill="none" stroke="url(#g1)" stroke-width="13" stroke-linecap="round"/>
+        <path d="M70 220c70 0 120 60 150 100s110 40 150-20" fill="none" stroke="url(#g2)" stroke-width="13" stroke-linecap="round"/>
+        <path d="M80 300c70-50 110-10 140 30s110 20 140-40" fill="none" stroke="url(#g1)" stroke-width="9" stroke-linecap="round" opacity=".8"/>
+        <circle cx="220" cy="220" r="42" fill="none" stroke="#5a2338" stroke-width="10"/>
+        <circle cx="220" cy="220" r="42" fill="none" stroke="#c08a2e" stroke-width="4" stroke-dasharray="14 10"/>
+        <circle cx="220" cy="220" r="9" fill="#b3453f"/>
+        <g fill="#5a2338" font-family="sans-serif" font-size="12" letter-spacing="2">
+          <text x="26" y="424">SAFE · CONSENT · CHECK</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+
+    <!-- 01 领域概览 -->
+    <section class="section" id="overview" aria-labelledby="h-overview">
+      <div class="section-head">
+        <div>
+          <span class="kicker">01 / 领域概览</span>
+          <h2 id="h-overview">女烈绳缚是什么：三个层次说清</h2>
+        </div>
+        <a class="more" href="/#channels">按缛法找条目 →</a>
+      </div>
+      <div class="grid g3">
+        <article class="card">
+          <h3>形制层</h3>
+          <p class="meta">涉及：九宫缚 · 龟甲缚 · 背缚</p>
+          <p>“女烈”在中文绳缚社群里指一种偏紧致、强调躯干线条与对称感的呈现取向，并不是单独一种结法。它常借九宫缚的方格分区，用 6mm 与 8mm 棉绳交替做出横向五道、纵向四道的基本骨架，绳长通常按身高×7.5 估算。</p>
+        </article>
+        <article class="card">
+          <h3>协作层</h3>
+          <p class="meta">涉及：双人配合 · 松绳节奏 · 剪刀位置</p>
+          <p>单人对镜缠绕在实际操作中容易漏掉背侧压点，女烈类目更依赖第二人在场读数。常见做法是缚者每完成一道横向绳圈，报一次绳压位置，被缚者回一句“可以”或“换位”，形成可追溯的口令链。</p>
+        </article>
+        <article class="card">
+          <h3>记录层</h3>
+          <p class="meta">涉及：绳长表 · 时间戳 · 复现说明</p>
+          <p>条目能否复现，看三样：绳长、起始至松绳的分钟数、打结顺序照片。10 月 28 日更新的背缚条目补上“第三道绕腰后先回穿再收结”，此前有 4 位读者反馈收结后难以单手解开，这是规则修补带来的差异。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 精选内容推荐 + 非对称 -->
+    <section class="section" id="featured" aria-labelledby="h-featured">
+      <div class="section-head">
+        <div>
+          <span class="kicker">02 / 精选内容</span>
+          <h2 id="h-featured">本周值得细读的五条</h2>
+        </div>
+        <span class="small">编辑整理于 11 月 7 日</span>
+      </div>
+      <div class="asym">
+        <article class="feature">
+          <h3>九宫缚与龟甲缚的结构差异在哪</h3>
+          <p class="meta sans">深度条目 · 约 2200 字 · 含 4 张对照图</p>
+          <p>九宫缚以“九格分区”为基础，横向三道由胸下、腰上、髋上定位；龟甲缚则依赖菱形交叉，绳索路径呈斜向连续。两者常被混称，但只要看第一道结的起点就能区分：从背侧起手多是九宫，从胸前锁骨下方起手多为龟甲。</p>
+          <p>条目附了 10 月 30 日一次现场记录：同一位练习者、同一根 8mm 棉绳，九宫缚用绳 11.2 米，龟甲缚用绳 9.6 米，差 1.6 米，主要差在回穿次数。</p>
+          <div class="tags">
+            <a href="/#analysis">九宫缚</a><a href="/#analysis">龟甲缚</a><a href="/#guide">绳长估算</a><a href="/#faq">打结顺序</a>
+          </div>
+        </article>
+        <div class="grid" style="gap:var(--s2)">
+          <article class="card">
+            <h3>背缚收结的三种回穿法</h3>
+            <p class="meta">10月30日 · 步骤图 6 张</p>
+            <p>双回穿、单回穿、反手结三种收法对松绳时间影响明显，双回穿平均多花 40 秒解开。</p>
+          </article>
+          <article class="card">
+            <h3>松绳检查表（可打印 A4）</h3>
+            <p class="meta">11月5日 · PDF 版同步</p>
+            <p>六项：指端温度、麻感范围、呼吸节奏、视线交流、剪刀可达、计时器可读。</p>
+          </article>
+          <article class="card">
+            <h3>棉绳与黄麻的手感对照</h3>
+            <p class="meta">11月2日 · 对照面板</p>
+            <p>8mm 棉绳静摩擦低，收紧慢；黄麻摩擦高但易起刺，入门多选棉绳。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 最新更新 -->
+    <section class="section" id="latest" aria-labelledby="h-latest">
+      <div class="section-head">
+        <div>
+          <span class="kicker">03 / 最新更新</span>
+          <h2 id="h-latest">近 30 天条目修订记录</h2>
+        </div>
+        <span class="small">按日期倒序</span>
+      </div>
+      <div class="card">
+        <ul class="list-plain">
+          <li><time datetime="2026-11-07">11月7日</time><span class="t">九宫缚与背缚对照表上线<small>补入绳长、回穿次数、解开耗时三列</small></span><span class="tagx">对照表</span></li>
+          <li><time datetime="2026-11-05">11月5日</time><span class="t">女烈主题四套缛法步骤图修订<small>第二套横向绳圈由五道改为四道，附修改说明</small></span><span class="tagx">步骤图</span></li>
+          <li><time datetime="2026-11-02">11月2日</time><span class="t">棉绳与黄麻手感对照补充摩擦数据<small>8mm 棉绳静摩擦系数 0.38，黄麻 0.61</small></span><span class="tagx">材料</span></li>
+          <li><time datetime="2026-10-30">10月30日</time><span class="t">背缚收结的三种回穿法<small>加入单手解结测试，共 9 次记录</small></span><span class="tagx">步骤</span></li>
+          <li><time datetime="2026-10-28">10月28日</time><span class="t">背缚条目修正收结顺序<small>第三道绕腰后先回穿再收结，回应 4 位读者反馈</small></span><span class="tagx">修订</span></li>
+          <li><time datetime="2026-10-24">10月24日</time><span class="t">术语对照增至 12 条<small>新增“回穿”“压点”“松绳窗口”解释</small></span><span class="tagx">术语</span></li>
+          <li><time datetime="2026-10-18">10月18日</time><span class="t">安全守则第 3 版发布<small>把“每 8 分钟检查”改为“每 6 分钟检查”</small></span><span class="tagx">安全</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 分类入口 -->
+    <section class="section" id="channels" aria-labelledby="h-channels">
+      <div class="section-head">
+        <div>
+          <span class="kicker">04 / 缛法分类</span>
+          <h2 id="h-channels">按缛法与场景查条目</h2>
+        </div>
+        <span class="small">共 10 个频道</span>
+      </div>
+      <div class="channel-index">
+        <a href="/#analysis">九宫缚 <b>18</b></a>
+        <a href="/#analysis">龟甲缚 <b>15</b></a>
+        <a href="/#analysis">背缚 <b>12</b></a>
+        <a href="/#guide">胸缚与腰缚 <b>9</b></a>
+        <a href="/#guide">绳长估算 <b>7</b></a>
+        <a href="/#faq">打结顺序 <b>11</b></a>
+        <a href="/#faq">松绳与解结 <b>8</b></a>
+        <a href="/#comments">棉绳与黄麻 <b>6</b></a>
+        <a href="/#guide">安全检查表 <b>5</b></a>
+        <a href="/#latest">新人须知 <b>4</b></a>
+      </div>
+    </section>
+
+    <!-- 05 深度解析 -->
+    <section class="section" id="analysis" aria-labelledby="h-analysis">
+      <div class="section-head">
+        <div>
+          <span class="kicker">05 / 深度解析</span>
+          <h2 id="h-analysis">女烈缚法的三个可核对判断</h2>
+        </div>
+        <span class="small">全页唯一主体阅读区</span>
+      </div>
+      <article class="analysis">
+        <p>先给一个会被反驳的立场：在女烈这一取向里，<strong>“绳道数量”并不是难度指标，回穿次数才是。</strong>依据是 10 月 30 日同一练习者在同一条背缚上做的三次测试——横向三道、回穿两次的版本平均解开耗时 2 分 18 秒；横向五道、回穿零次的版本平均 1 分 41 秒。绳道更多的那版反而更快解开，差别落在回穿上。</p>
+
+        <h3>判断一：九宫缚的定位点在髋骨而非腰部</h3>
+        <p>10 月 24 日更新的术语表把“腰上”改成“髋上”，并把定位描述从“腰线上一掌”改为“髂骨上缘一指”。改动原因来自 10 月 21 日的一次复现：按旧描述操作，同一被缚者在坐姿时第三道横绳上移到肋下，压迫感明显。</p>
+        <div class="factbox">
+          <span class="k">可核对结构</span>
+          <p style="margin:6px 0 0">旧描述：腰线上一掌 → 坐姿后横绳位移约 4cm，压点落在肋下<br>新描述：髂骨上缘一指 → 坐姿后位移约 1cm，压点仍在髋部</p>
+        </div>
+        <p>这条判断可以被反驳：如果被缚者躯干比例不同，髂骨上缘的相对位置会变，单靠“一指”仍可能偏移。更稳妥的做法是让被缚者先坐姿标记，再站立绑缚。</p>
+
+        <h3>判断二：6 分钟检查点的依据是握力下降曲线</h3>
+        <div class="judge">
+          <b>核心判断</b>
+          在 8mm 棉绳的常见紧度下，被缚者握力在持续束縛 6 分钟后开始出现可测量的下降；把检查点定在 6 分钟比 8 分钟更稳。
+        </div>
+        <p>10 月 18 日第 3 版安全守则把检查间隔从 8 分钟改为 6 分钟，页内记录的原因只有一句“参考多次练习反馈”。严格说，这属于经验调整，不是受控实验。可核对的部分是：10 月 14 日至 10 月 17 日的 12 次练习中，有 5 次在 7—8 分钟节点出现手指发麻的主诉。样本很小，把它当作推测更合适。</p>
+
+        <h3>判断三：背缚的争议在“先收结还是先固定末端”</h3>
+        <p>社群内有两种说法。说法 A（转述自 10 月 28 日前版本条目）：绕腰三道后立即收结，末端再回穿。说法 B（10 月 30 日新增条目）：先回穿固定末端，再收主结。事实层面能确认的是，A 版本在 9 次单手解结测试中有 4 次超过 3 分钟；B 版本 9 次里 2 次超过 3 分钟。回应方面，条目作者在 11 月 5 日修订说明中承认“此前低估了末端滑动”。至于“B 一定更安全”，目前只能算推测，缺少更大样本。</p>
+        <div class="factbox">
+          <span class="k">拆开来看</span>
+          <p style="margin:6px 0 0"><strong>事实：</strong>A 版本 9 次中 4 次解结超过 3 分钟。<br><strong>回应：</strong>作者 11 月 5 日修订说明承认末端滑动被低估。<br><strong>转述：</strong>有读者称“背缚只要收得紧就不会滑”，此为个人经验。<br><strong>推测：</strong>先回穿可能降低滑动，但样本不足。</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 06 体验指南：编号步骤 -->
+    <section class="section" id="guide" aria-labelledby="h-guide">
+      <div class="section-head">
+        <div>
+          <span class="kicker">06 / 体验指南</span>
+          <h2 id="h-guide">第一次练九宫缚的六步流程</h2>
+        </div>
+        <span class="small">两人协作 · 剪刀在手</span>
+      </div>
+      <ol class="steps">
+        <li><h3>量绳与对折</h3><p>按身高×7.5 取绳，8mm 棉绳 1.7 米身高约需 12.8 米；对折后中点做活结标记，避免起手偏位。</p></li>
+        <li><h3>定位髋上第一道</h3><p>被缚者先坐姿，标记髂骨上缘；站立后第一道横绳压住标记线上移一指，收紧前确认可插入两指。</p></li>
+        <li><h3>横向三道递增</h3><p>第二道在腰线，第三道在胸下；每道完成后报一次压点位置，被缚者回“可以”再继续。</p></li>
+        <li><h3>纵向四道分区</h3><p>纵向绳从背侧起，穿过横向绳下方，形成九格；交叉点保持同一侧朝外，便于复查。</p></li>
+        <li><h3>回穿与收结</h3><p>末端先回穿固定再收主结，参照 10 月 30 日条目；收结后立刻试解一次，确认单手可解或剪刀可断。</p></li>
+        <li><h3>6 分钟检查与松绳</h3><p>计时器每 6 分钟响一次，查指端温度、麻感、呼吸；出现持续麻感立即松绳，不等到下一节点。</p></li>
+      </ol>
+    </section>
+
+    <!-- 07 对照面板 -->
+    <section class="section" id="compare" aria-labelledby="h-compare">
+      <div class="section-head">
+        <div>
+          <span class="kicker">07 / 对照面板</span>
+          <h2 id="h-compare">九宫缚与龟甲缚逐项对照</h2>
+        </div>
+        <span class="small">数据来自 10 月 30 日现场记录</span>
+      </div>
+      <div class="compare">
+        <div>
+          <h3>九宫缚</h3>
+          <div class="row"><b>起手</b><span>背侧，腰后</span></div>
+          <div class="row"><b>骨架</b><span>横三纵四，九格分区</span></div>
+          <div class="row"><b>用绳</b><span>8mm 棉绳约 11.2 米</span></div>
+          <div class="row"><b>回穿</b><span>2 次</span></div>
+          <div class="row"><b>解开耗时</b><span>平均 2 分 18 秒</span></div>
+          <div class="row"><b>适合</b><span>躯干对称、强调方格</span></div>
+        </div>
+        <div>
+          <h3>龟甲缚</h3>
+          <div class="row"><b>起手</b><span>胸前锁骨下方</span></div>
+          <div class="row"><b>骨架</b><span>菱形交叉，斜向连续</span></div>
+          <div class="row"><b>用绳</b><span>8mm 棉绳约 9.6 米</span></div>
+          <div class="row"><b>回穿</b><span>3 次</span></div>
+          <div class="row"><b>解开耗时</b><span>平均 2 分 46 秒</span></div>
+          <div class="row"><b>适合</b><span>肩背斜线、强调连续感</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 术语索引 -->
+    <section class="section" id="terms" aria-labelledby="h-terms">
+      <div class="section-head">
+        <div>
+          <span class="kicker">08 / 术语索引</span>
+          <h2 id="h-terms">12 个常查术语与对应条目</h2>
+        </div>
+        <span class="small">10 月 24 日更新</span>
+      </div>
+      <div class="card">
+        <div class="tags" style="font-size:.95rem">
+          <a href="/#analysis">回穿</a><a href="/#guide">压点</a><a href="/#faq">松绳窗口</a>
+          <a href="/#guide">活结标记</a><a href="/#analysis">九格分区</a><a href="/#analysis">菱形交叉</a>
+          <a href="/#guide">髂骨上缘</a><a href="/#faq">单指插入</a><a href="/#comments">棉绳静摩擦</a>
+          <a href="/#compare">收结顺序</a><a href="/#latest">修订说明</a><a href="/#faq">松绳计时</a>
+        </div>
+        <p style="margin-top:var(--s2);font-size:.9rem;color:var(--ink-soft)">术语页只解释词义和出处，不复述步骤。例如“回穿”指绳端从已收紧的绳圈下方反向穿过，目的在增加摩擦而非增加美观；“压点”指受力集中且被缚者能明确指出的位置。</p>
+      </div>
+    </section>
+
+    <!-- 09 榜单 -->
+    <section class="section" id="rank" aria-labelledby="h-rank">
+      <div class="section-head">
+        <div>
+          <span class="kicker">09 / 条目榜单</span>
+          <h2 id="h-rank">十月复现率最高的五条</h2>
+        </div>
+        <span class="small">按 30 天内复现次数统计</span>
+      </div>
+      <div class="card">
+        <ol class="rank">
+          <li><span class="nm">九宫缚基础三横四纵<small>复现 27 次 · 含绳长表</small></span><span class="sc">27</span></li>
+          <li><span class="nm">背缚双回穿收结<small>复现 21 次 · 单手解结测试</small></span><span class="sc">21</span></li>
+          <li><span class="nm">龟甲缚起手定位<small>复现 18 次 · 锁骨下三指</small></span><span class="sc">18</span></li>
+          <li><span class="nm">6 分钟松绳检查表<small>复现 16 次 · 打印版</small></span><span class="sc">16</span></li>
+          <li><span class="nm">棉绳对折中点标记<small>复现 14 次 · 图示 2 张</small></span><span class="sc">14</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 10 时间线 -->
+    <section class="section" id="timeline" aria-labelledby="h-timeline">
+      <div class="section-head">
+        <div>
+          <span class="kicker">10 / 修订时间线</span>
+          <h2 id="h-timeline">安全守则三次版本变化</h2>
+        </div>
+      </div>
+      <div class="card">
+        <ul class="timeline">
+          <li>
+            <time datetime="2026-10-18">10月18日 · 第 3 版</time>
+            <h3>检查间隔由 8 分钟改为 6 分钟</h3>
+            <p>依据 10 月 14—17 日 12 次练习中 5 次在 7—8 分钟出现手指发麻主诉。样本小，标注为经验调整。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-09">10月9日 · 第 2 版</time>
+            <h3>加入“剪刀可达”为独立检查项</h3>
+            <p>此前刀具位置只在总则提及，未列入逐次检查；第 2 版起与指端温度并列。</p>
+          </li>
+          <li>
+            <time datetime="2026-09-27">9月27日 · 第 1 版</time>
+            <h3>首次给出六项检查表</h3>
+            <p>六项为指端温度、麻感范围、呼吸节奏、视线交流、剪刀可达、计时器可读，此后未改动项名。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 11 FAQ -->
+    <section class="section" id="faq" aria-labelledby="h-faq">
+      <div class="section-head">
+        <div>
+          <span class="kicker">11 / 常见问答</span>
+          <h2 id="h-faq">新手最常问的七个问题</h2>
+        </div>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>九宫缚和龟甲缚能从照片上分辨吗</summary>
+          <div class="ans"><p>可以，看第一道结的起手位置。九宫缚多从背侧腰后起手，横向三段平行；龟甲缚从胸前锁骨下方起手，绳索路径斜向连成菱形。若照片只拍到正面且绳道交叉密集，分辨难度上升，此时看纵向绳是否等距。</p></div>
+        </details>
+        <details>
+          <summary>8mm 棉绳绑 1.7 米身高需要多长</summary>
+          <div class="ans"><p>按身高×7.5 估算约 12.8 米，九宫缚实测约 11.2 米，留出回穿余量。若用 6mm 绳，长度需增加约 15%，因为细绳回穿时更易滑脱，需要多绕一圈。</p></div>
+        </details>
+        <details>
+          <summary>束縛多久必须松绳</summary>
+          <div class="ans"><p>现行守则要求每 6 分钟检查一次，但松绳不以总时长为唯一标准。出现持续麻感、指端发凉、呼吸变浅任一项，立即松开该处绳圈，不必等到检查点。</p></div>
+        </details>
+        <details>
+          <summary>背缚收结后单手解不开怎么办</summary>
+          <div class="ans"><p>先在收结前做一次试解，确认单手能拉动末端或剪刀能伸入。10 月 30 日条目记录的双回穿法在 9 次测试中有 4 次超过 3 分钟解开，建议新手改用单回穿并保留活端。</p></div>
+        </details>
+        <details>
+          <summary>棉绳和黄麻在女烈取向里怎么选</summary>
+          <div class="ans"><p>棉绳静摩擦低、收紧慢，适合练习定位；黄麻摩擦高、易起刺，压点更难微调。11 月 2 日对照给出的静摩擦系数为棉绳 0.38、黄麻 0.61，初次练习优先棉绳。</p></div>
+        </details>
+        <details>
+          <summary>一个人能完成九宫缚吗</summary>
+          <div class="ans"><p>能完成前半段，但背侧压点难以自查。更实际的做法是先用镜子或手机录像辅助定位，再请第二人在场复核；守则把“视线交流”列为检查项，单人操作时应改为录屏回看。</p></div>
+        </details>
+        <details>
+          <summary>术语表里的“松绳窗口”指什么</summary>
+          <div class="ans"><p>指从出现轻微麻感到必须松绳之间的可操作时间。10 月 24 日条目把它写为“不超过 2 分钟”，并强调这是经验值，个体差异大，不能当成统一标准。</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 12 用户评论 -->
+    <section class="section" id="comments" aria-labelledby="h-comments">
+      <div class="section-head">
+        <div>
+          <span class="kicker">12 / 绳友评论</span>
+          <h2 id="h-comments">关于条目本身的六条反馈</h2>
+        </div>
+        <span class="small">含中性意见与反对意见</span>
+      </div>
+      <div class="comments">
+        <article class="cmt">
+          <div class="who"><span class="av">阿</span><b>阿柘</b><span>11月6日</span></div>
+          <p>背缚那篇把第三道绕腰的回穿顺序改对了，我按旧版做总是收不紧。新版的 2 分 18 秒数据我用同款 8mm 棉绳试了一次，2 分 05 秒，接近。</p>
+          <span class="ref">指向：背缚双回穿收结</span>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">菱</span><b>菱形结</b><span>11月5日</span></div>
+          <p>九宫缚髋上定位那条改得好，但“髂骨上缘一指”对我这种躯干短的人还是偏高，坐姿标记后还是会移一点。建议补一句按个人骨点调。</p>
+          <span class="ref">指向：判断一 髋骨定位</span>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">小</span><b>小满</b><span>11月4日</span></div>
+          <p>6 分钟检查表打印出来贴在墙上，比记在手机里管用。就是“剪刀可达”这一项每次都要重新摆位置，有点麻烦。</p>
+          <span class="ref">指向：6 分钟松绳检查表</span>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">老</span><b>老周</b><span>11月3日</span></div>
+          <p>棉绳和黄麻的摩擦系数列出来挺好，但 0.38 和 0.61 是什么条件下测的没写，干手还是出汗手差别不小，希望能补实验条件。</p>
+          <span class="ref">指向：棉绳与黄麻对照</span>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">北</span><b>北岸</b><span>11月2日</span></div>
+          <p>说实话女烈这类条目的步骤图有点同质化，四套缚法看下来构图差不多，区分度不高。内容本身没问题，呈现方式可以再分开些。</p>
+          <span class="ref">指向：女烈主题四套缛法步骤图</span>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">青</span><b>青禾</b><span>11月1日</span></div>
+          <p>术语表把“回穿”解释成增加摩擦而不是美观，这点我同意。之前一直以为回穿是为了好看，按新说法收紧后确实稳一些。</p>
+          <span class="ref">指向：12 个常查术语</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 13 相关资讯 -->
+    <section class="section" id="news" aria-labelledby="h-news">
+      <div class="section-head">
+        <div>
+          <span class="kicker">13 / 相关资讯</span>
+          <h2 id="h-news">近期社群动态</h2>
+        </div>
+      </div>
+      <div class="news-grid">
+        <article class="news-item">
+          <time datetime="2026-11-07">11月7日</time>
+          <div><h3>九宫缚与背缚对照表上线</h3><p>补入绳长、回穿次数、解开耗时三列，可与 10 月 30 日现场记录交叉核对。</p></div>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-11-05">11月5日</time>
+          <div><h3>四套缛法步骤图修订</h3><p>第二套横向绳圈由五道改为四道，修改原因写在页面底部，未删旧图。</p></div>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-11-02">11月2日</time>
+          <div><h3>材料对照补入摩擦数据</h3><p>8mm 棉绳静摩擦 0.38，黄麻 0.61；未标注测试湿度，读者已提出疑问。</p></div>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-10-30">10月30日</time>
+          <div><h3>背缚三种回穿法测试完成</h3><p>共 9 次单手解结记录，双回穿平均耗时最长，单回穿更适合入门。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 14 相关推荐 -->
+    <section class="section" id="reco" aria-labelledby="h-reco">
+      <div class="section-head">
+        <div>
+          <span class="kicker">14 / 相关推荐</span>
+          <h2 id="h-reco">按你查的词继续看</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="reco tags" style="font-size:.92rem">
+          <a href="/#analysis">九宫缚第一道定位</a>
+          <a href="/#compare">龟甲缚菱形交叉</a>
+          <a href="/#guide">背缚收结顺序</a>
+          <a href="/#faq">8mm 棉绳绳长估算</a>
+          <a href="/#faq">松绳窗口 2 分钟</a>
+          <a href="/#guide">髂骨上缘标记法</a>
+          <a href="/#comments">棉绳静摩擦系数</a>
+          <a href="/#timeline">6 分钟检查点来历</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15 补充：可信度分层 + 引语 -->
+    <section class="section" id="credibility" aria-labelledby="h-cred">
+      <div class="section-head">
+        <div>
+          <span class="kicker">15 / 信息分层</span>
+          <h2 id="h-cred">哪些能直接照做，哪些只能参考</h2>
+        </div>
+      </div>
+      <div class="levels">
+        <div class="level">
+          <span class="lv">第一层 · 有记录可核对</span>
+          <h3>绳长与回穿次数</h3>
+          <ul>
+            <li>8mm 棉绳背缚 9.6 米</li>
+            <li>九宫缚 11.2 米，差 1.6 米</li>
+            <li>10 月 30 日 9 次解结测试</li>
+          </ul>
+        </div>
+        <div class="level">
+          <span class="lv">第二层 · 经验调整</span>
+          <h3>6 分钟检查间隔</h3>
+          <ul>
+            <li>依据 12 次练习中 5 次主诉</li>
+            <li>样本小，非受控实验</li>
+            <li>个体差异需自行观察</li>
+          </ul>
+        </div>
+        <div class="level">
+          <span class="lv">第三层 · 待验证推测</span>
+          <h3>回穿降低末端滑动</h3>
+          <ul>
+            <li>方向合理，样本不足</li>
+            <li>不能替代试解</li>
+            <li>仍需保留活端</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quote" style="margin-top:var(--s3)">
+        <p>“我把 10 月 30 日那组解结测试重做了五遍，双回穿确实慢，但慢在找末端而不在拉力。绳结本身没有变难，是手指要摸的位置变多了。”</p>
+        <footer>—— 练习记录，11 月 1 日，8mm 棉绳</footer>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- 页脚 -->
+<footer class="site-footer" id="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="bn">KB绳艺网女烈专区</div>
+        <p>以可核对的数据、可复现的步骤和可打印的检查表，记录中文绳缚中偏紧致对称的呈现取向。</p>
+        <p class="small" style="color:#a88d7d">更新时间：2026 年 11 月 7 日，对应“九宫缚与背缚对照表上线”与“四套缛法步骤图修订”两项。</p>
+      </div>
+      <div>
+        <h3>缛法与条目</h3>
+        <ul class="footer-list">
+          <li><a href="/#analysis">九宫缚</a></li>
+          <li><a href="/#compare">龟甲缚对照</a></li>
+          <li><a href="/#guide">背缚收结</a></li>
+          <li><a href="/#rank">条目榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>安全与指南</h3>
+        <ul class="footer-list">
+          <li><a href="/#guide">六步流程</a></li>
+          <li><a href="/#faq">松绳窗口</a></li>
+          <li><a href="/#timeline">守则版本</a></li>
+          <li><a href="/#credibility">信息分层</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>参与</h3>
+        <ul class="footer-list">
+          <li><a href="/#comments">写一条评论</a></li>
+          <li><a href="/#latest">修订记录</a></li>
+          <li><a href="/#terms">术语索引</a></li>
+          <li><a href="/#news">社群动态</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>示例数据说明：本站条目、绳长数值、评论与日期均为演示内容，人物名称与账号名为示例，不对应真实个人；引用平台与规则描述以页面内标注为准。</p>
+      <p>© 2026 KB绳艺网女烈专区 · 内容仅供学习讨论，实际操作须两人协作并确保双方自愿与安全。</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"KB绳艺网女烈专区",
+  "description":"聚焦中文绳缚社群的九宫缚、龟甲缚、背缚三类缚法，提供绳长估算、松绳检查表与术语对照。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"九宫缚和龟甲缚能从照片上分辨吗","acceptedAnswer":{"@type":"Answer","text":"可以，看第一道结的起手位置。九宫缚多从背侧腰后起手，横向三段平行；龟甲缚从胸前锁骨下方起手，绳索路径斜向连成菱形。"}},
+    {"@type":"Question","name":"8mm 棉绳绑 1.7 米身高需要多长","acceptedAnswer":{"@type":"Answer","text":"按身高×7.5 估算约 12.8 米，九宫缚实测约 11.2 米，留出回穿余量。若用 6mm 绳，长度需增加约 15%。"}},
+    {"@type":"Question","name":"束縛多久必须松绳","acceptedAnswer":{"@type":"Answer","text":"现行守则要求每 6 分钟检查一次，出现持续麻感、指端发凉、呼吸变浅任一项应立即松开该处绳圈。"}},
+    {"@type":"Question","name":"背缚收结后单手解不开怎么办","acceptedAnswer":{"@type":"Answer","text":"先在收结前做一次试解，确认单手能拉动末端或剪刀能伸入。双回穿法在 9 次测试中有 4 次超过 3 分钟解开，新手建议改用单回穿。"}},
+    {"@type":"Question","name":"棉绳和黄麻在女烈取向里怎么选","acceptedAnswer":{"@type":"Answer","text":"棉绳静摩擦低、收紧慢，适合练习定位；黄麻摩擦高、易起刺。静摩擦系数为棉绳 0.38、黄麻 0.61，初次练习优先棉绳。"}},
+    {"@type":"Question","name":"一个人能完成九宫缚吗","acceptedAnswer":{"@type":"Answer","text":"能完成前半段，但背侧压点难以自查。可先用镜子或手机录像辅助定位，再请第二人在场复核。"}},
+    {"@type":"Question","name":"术语表里的“松绳窗口”指什么","acceptedAnswer":{"@type":"Answer","text":"指从出现轻微麻感到必须松绳之间的可操作时间，条目写为不超过 2 分钟，属经验值，个体差异大。"}}
+  ]
+}
+</script>
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('primaryNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.closest('a')) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 本地搜索 */
+  var input = document.getElementById('searchInput');
+  var btn = document.getElementById('searchBtn');
+  var panel = document.getElementById('searchPanel');
+  var index = [];
+  document.querySelectorAll('main h2, main h3, main .faq summary, main .channel-index a, main .tags a, main .reco a').forEach(function(el){
+    var text = el.textContent.replace(/\s+/g,' ').trim();
+    if (!text) return;
+    var target = el;
+    if (el.tagName === 'H2' || el.tagName === 'H3') {
+      var sec = el.closest('section');
+      if (sec) target = sec;
+    } else if (el.closest('.faq')) {
+      target = el.closest('details') || el;
+    } else if (el.closest('.channel-index') || el.closest('.tags')) {
+      var sec2 = el.closest('section');
+      if (sec2) target = sec2;
+    }
+    index.push({text: text, el: target});
+  });
+
+  function runSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if (!q) { panel.hidden = true; panel.innerHTML=''; return; }
+    var seen = {};
+    var hits = index.filter(function(item){
+      if (item.text.toLowerCase().indexOf(q) === -1) return false;
+      var key = item.text;
+      if (seen[key]) return false;
+      seen[key] = true;
+      return true;
+    }).slice(0, 8);
+    panel.innerHTML = '';
+    if (!hits.length) {
+      var empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.textContent = '没有找到与“' + input.value.trim() + '”相关的条目，换一个词试试，比如“九宫缚”或“松绳”。';
+      panel.appendChild(empty);
+    } else {
+      hits.forEach(function(item){
+        var a = document.createElement('a');
+        a.className = 'res';
+        a.href = '#';
+        a.textContent = item.text;
+        a.addEventListener('click', function(ev){
+          ev.preventDefault();
+          var sec = item.el;
+          if (sec.id) {
+            location.hash = '#' + sec.id;
+          } else {
+            sec.scrollIntoView({behavior:'smooth', block:'start'});
+          }
+          panel.hidden = true;
+          input.value = '';
+        });
+        panel.appendChild(a);
+      });
+    }
+    panel.hidden = false;
+  }
+  if (btn) btn.addEventListener('click', runSearch);
+  if (input) {
+    input.addEventListener('input', runSearch);
+    input.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') { e.preventDefault(); runSearch(); }
+      if (e.key === 'Escape') { panel.hidden = true; }
+    });
+  }
+  document.addEventListener('click', function(e){
+    if (panel && !panel.hidden && !e.target.closest('.search')) panel.hidden = true;
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if (!toTop) return;
+    if (window.scrollY > 480) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if (toTop) toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 导航滚动高亮 */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="/#"]'));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+  function highlight(){
+    var pos = window.scrollY + (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--announce-h')) || 38) + 80;
+    var current = null;
+    sections.forEach(function(sec){
+      if (sec.offsetTop <= pos) current = sec.id;
+    });
+    navLinks.forEach(function(a){
+      if (current && a.getAttribute('href') === '/#' + current) a.setAttribute('aria-current','true');
+      else a.removeAttribute('aria-current');
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+})();
+</script>
+</body>
+  </html>
